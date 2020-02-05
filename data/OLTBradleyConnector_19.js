@@ -1,0 +1,15 @@
+var json_OLTBradleyConnector_19 = {
+"type": "FeatureCollection",
+"name": "OLTBradleyConnector_19",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "trail name": "Oak Leaf Trail", "trail line": "Bradley Connector", "lane type": "off-street paved", "notes": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -87.960520774362436, 43.163192830438568 ], [ -87.960796891715589, 43.163189750893075 ], [ -87.962003110795067, 43.163203300892185 ], [ -87.96273646835229, 43.163225473611384 ] ] ] } },
+{ "type": "Feature", "properties": { "trail name": "Oak Leaf Trail", "trail line": "Bradley Connector", "lane type": "off-street paved", "notes": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -87.963087314713889, 43.163228399177889 ], [ -87.963317834705961, 43.163220392363947 ] ] ] } },
+{ "type": "Feature", "properties": { "trail name": "Oak Leaf Trail", "trail line": "Bradley Connector", "lane type": "off-street paved", "notes": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -87.963493468985646, 43.163237021899526 ], [ -87.963601551619291, 43.163223471907941 ], [ -87.963719766999844, 43.163234558264854 ], [ -87.964092145448575, 43.163281983213771 ], [ -87.964606804551764, 43.163281983213771 ] ] ] } },
+{ "type": "Feature", "properties": { "trail name": "Oak Leaf Trail", "trail line": "Bradley Connector", "lane type": "off-street paved", "notes": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -87.965135818379792, 43.163010521077226 ], [ -87.965695652646275, 43.163015448364391 ] ] ] } },
+{ "type": "Feature", "properties": { "trail name": "Oak Leaf Trail", "trail line": "Bradley Connector", "lane type": "off-street paved", "notes": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -87.965842788575287, 43.163014216542621 ], [ -87.967322591821144, 43.163011136988111 ] ] ] } },
+{ "type": "Feature", "properties": { "trail name": "Oak Leaf Trail", "trail line": "Bradley Connector", "lane type": "off-street paved", "notes": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -87.967528624341554, 43.163014216542621 ], [ -87.969689854816778, 43.163007441522517 ] ] ] } },
+{ "type": "Feature", "properties": { "trail name": "Oak Leaf Trail", "trail line": "Bradley Connector", "lane type": "off-street paved", "notes": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -87.9699811712903, 43.163015448364391 ], [ -87.973295846121488, 43.163010521077226 ], [ -87.974685721238615, 43.163010521077183 ] ] ] } },
+{ "type": "Feature", "properties": { "trail name": "Oak Leaf Trail", "trail line": "Bradley Connector", "lane type": "off-street paved", "notes": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -87.975044589358134, 43.163006209700541 ], [ -87.975874208010936, 43.163002514234641 ], [ -87.976935191051439, 43.163015448364391 ], [ -87.977853471239698, 43.163008673344414 ] ] ] } }
+]
+}
