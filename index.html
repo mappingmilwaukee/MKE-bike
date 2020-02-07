@@ -19,7 +19,7 @@
         }
         </style>
         <title></title>
-	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
     </head>
     <body>
         <div id="map">
@@ -88,20 +88,20 @@
                 map.fitBounds(bounds_group.getBounds());
             }
         }
-        var layer_GoogleMaps_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        var layer_GoogleSatelliteHybrid_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
-			maxZoom: 23
+							maxZoom: 23
         });
-        layer_GoogleMaps_0;
-        map.addLayer(layer_GoogleMaps_0);
-        var layer_GoogleSatelliteHybrid_1 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
+        layer_GoogleSatelliteHybrid_0;
+        map.addLayer(layer_GoogleSatelliteHybrid_0);
+        var layer_GoogleMaps_1 = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
-			maxZoom: 23
-		});
-        layer_GoogleSatelliteHybrid_1;
-        map.addLayer(layer_GoogleSatelliteHybrid_1);
+							maxZoom: 23
+        });
+        layer_GoogleMaps_1;
+        map.addLayer(layer_GoogleMaps_1);
         function pop_Southsidelanes_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1373,7 +1373,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/OzaukeeInterurbanTrail_29.png" /> Ozaukee Interurban Trail': layer_OzaukeeInterurbanTrail_29,'<img src="legend/MuskegoRecreationTrail_28.png" /> Muskego Recreation Trail': layer_MuskegoRecreationTrail_28,'<img src="legend/FranklinHikeBikeTrail_27.png" /> Franklin Hike-Bike Trail': layer_FranklinHikeBikeTrail_27,'<img src="legend/WEEnergiesTrail_26.png" /> WE Energies Trail': layer_WEEnergiesTrail_26,'<img src="legend/BrookfieldGreenway_25.png" /> Brookfield Greenway': layer_BrookfieldGreenway_25,'<img src="legend/NewBerlinTrail_24.png" /> New Berlin Trail': layer_NewBerlinTrail_24,'<img src="legend/WestAllisCrossTownConnector_23.png" /> West Allis Cross Town Connector': layer_WestAllisCrossTownConnector_23,'<img src="legend/NojoshingTrail_22.png" /> Nojoshing Trail': layer_NojoshingTrail_22,'<img src="legend/HankAaronStateTrail_21.png" /> Hank Aaron State Trail': layer_HankAaronStateTrail_21,'<img src="legend/KinnickinnicRiverTrail_20.png" /> Kinnickinnic River Trail': layer_KinnickinnicRiverTrail_20,'<img src="legend/OLTBradleyConnector_19.png" /> OLT Bradley Connector': layer_OLTBradleyConnector_19,'<img src="legend/OLTMenomoneeLine_18.png" /> OLT Menomonee Line': layer_OLTMenomoneeLine_18,'<img src="legend/OLTWhitnallParkLoop_17.png" /> OLT Whitnall Park Loop': layer_OLTWhitnallParkLoop_17,'<img src="legend/OLTRootRiverLine_16.png" /> OLT Root River Line': layer_OLTRootRiverLine_16,'<img src="legend/OLTDrexelConnector_15.png" /> OLT Drexel Connector': layer_OLTDrexelConnector_15,'<img src="legend/OLTOakCreekLine_14.png" /> OLT Oak Creek Line': layer_OLTOakCreekLine_14,'<img src="legend/OLTSouthShoreLine_13.png" /> OLT South Shore Line': layer_OLTSouthShoreLine_13,'<img src="legend/OLTKinnickinnicLine_12.png" /> OLT Kinnickinnic Line': layer_OLTKinnickinnicLine_12,'<img src="legend/OLTBeerlineB_11.png" /> OLT Beerline B': layer_OLTBeerlineB_11,'<img src="legend/OLTLakeParkLoop_10.png" /> OLT Lake Park Loop': layer_OLTLakeParkLoop_10,'<img src="legend/OLTZipLine_9.png" /> OLT Zip Line': layer_OLTZipLine_9,'<img src="legend/OLTMilwaukeeRiverLine_8.png" /> OLT Milwaukee River Line': layer_OLTMilwaukeeRiverLine_8,'<img src="legend/Northsideshared_7.png" /> Northside shared': layer_Northsideshared_7,'<img src="legend/Northsidelanes_6.png" /> Northside lanes': layer_Northsidelanes_6,'<img src="legend/Eastsideshared_5.png" /> Eastside shared': layer_Eastsideshared_5,'<img src="legend/Eastsidelanes_4.png" /> Eastside lanes': layer_Eastsidelanes_4,'<img src="legend/Southsideshared_3.png" /> Southside shared': layer_Southsideshared_3,'<img src="legend/Southsidelanes_2.png" /> Southside lanes': layer_Southsidelanes_2,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_1,"Google Maps": layer_GoogleMaps_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/OzaukeeInterurbanTrail_29.png" /> Ozaukee Interurban Trail': layer_OzaukeeInterurbanTrail_29,'<img src="legend/MuskegoRecreationTrail_28.png" /> Muskego Recreation Trail': layer_MuskegoRecreationTrail_28,'<img src="legend/FranklinHikeBikeTrail_27.png" /> Franklin Hike-Bike Trail': layer_FranklinHikeBikeTrail_27,'<img src="legend/WEEnergiesTrail_26.png" /> WE Energies Trail': layer_WEEnergiesTrail_26,'<img src="legend/BrookfieldGreenway_25.png" /> Brookfield Greenway': layer_BrookfieldGreenway_25,'<img src="legend/NewBerlinTrail_24.png" /> New Berlin Trail': layer_NewBerlinTrail_24,'<img src="legend/WestAllisCrossTownConnector_23.png" /> West Allis Cross Town Connector': layer_WestAllisCrossTownConnector_23,'<img src="legend/NojoshingTrail_22.png" /> Nojoshing Trail': layer_NojoshingTrail_22,'<img src="legend/HankAaronStateTrail_21.png" /> Hank Aaron State Trail': layer_HankAaronStateTrail_21,'<img src="legend/KinnickinnicRiverTrail_20.png" /> Kinnickinnic River Trail': layer_KinnickinnicRiverTrail_20,'<img src="legend/OLTBradleyConnector_19.png" /> OLT Bradley Connector': layer_OLTBradleyConnector_19,'<img src="legend/OLTMenomoneeLine_18.png" /> OLT Menomonee Line': layer_OLTMenomoneeLine_18,'<img src="legend/OLTWhitnallParkLoop_17.png" /> OLT Whitnall Park Loop': layer_OLTWhitnallParkLoop_17,'<img src="legend/OLTRootRiverLine_16.png" /> OLT Root River Line': layer_OLTRootRiverLine_16,'<img src="legend/OLTDrexelConnector_15.png" /> OLT Drexel Connector': layer_OLTDrexelConnector_15,'<img src="legend/OLTOakCreekLine_14.png" /> OLT Oak Creek Line': layer_OLTOakCreekLine_14,'<img src="legend/OLTSouthShoreLine_13.png" /> OLT South Shore Line': layer_OLTSouthShoreLine_13,'<img src="legend/OLTKinnickinnicLine_12.png" /> OLT Kinnickinnic Line': layer_OLTKinnickinnicLine_12,'<img src="legend/OLTBeerlineB_11.png" /> OLT Beerline B': layer_OLTBeerlineB_11,'<img src="legend/OLTLakeParkLoop_10.png" /> OLT Lake Park Loop': layer_OLTLakeParkLoop_10,'<img src="legend/OLTZipLine_9.png" /> OLT Zip Line': layer_OLTZipLine_9,'<img src="legend/OLTMilwaukeeRiverLine_8.png" /> OLT Milwaukee River Line': layer_OLTMilwaukeeRiverLine_8,'<img src="legend/Northsideshared_7.png" /> Northside shared': layer_Northsideshared_7,'<img src="legend/Northsidelanes_6.png" /> Northside lanes': layer_Northsidelanes_6,'<img src="legend/Eastsideshared_5.png" /> Eastside shared': layer_Eastsideshared_5,'<img src="legend/Eastsidelanes_4.png" /> Eastside lanes': layer_Eastsidelanes_4,'<img src="legend/Southsideshared_3.png" /> Southside shared': layer_Southsideshared_3,'<img src="legend/Southsidelanes_2.png" /> Southside lanes': layer_Southsidelanes_2,"Google Maps": layer_GoogleMaps_1,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_0,}).addTo(map);
         setBounds();
         </script>
     </body>
