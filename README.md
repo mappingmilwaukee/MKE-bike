@@ -1,11 +1,11 @@
 # MKE-bike
 Milwaukee's Bike Lanes &amp; Trails
 
-Why did I do this? What can I say - the City's own maps haven't been updated in a decade (2011!!), Google Maps' Bike layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, and the weather turnt, hibernation happened, beer, all of Seinfeld is on Hulu... 
+For your preseason consideration, almost Why did I do this? What can I say - the City's own maps haven't been updated in a decade (2011!!), Google Maps' Bike layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, and the weather turnt, hibernation happened, beer, all of Seinfeld is on Hulu... 
 
 What you should know:
 
-This map maps all types of on-street bike lanes and paved off-street trails. Unlike most bike maps, this one does not include bicycle routes, which besides small, vague signs in unnoticeable places are otherwise unmarked. Bike routes are usually connectors between lanes and/or trails. Plus, when bike maps do show bike routes, the maps are crazy busy to look at and understand - looking at you, [City of Milwaukee](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8). For that matter, bike maps can be absurdly complex, like [this catastrophe from Brookfield](https://www.ci.brookfield.wi.us/DocumentCenter/View/1362/pedestrian_bike_path_map?bidId=). Anyway:
+Layers of lanes and trails are in the top right corner. Street segments are clickable for more details. This map maps all types of on-street bike lanes and paved off-street trails. Unlike most bike maps, this one does not include bicycle routes, which besides small, vague signs in unnoticeable places are otherwise unmarked. Bike routes are usually connectors between lanes and/or trails. Plus, when bike maps do show bike routes, the maps are crazy busy to look at and understand - looking at you, [City of Milwaukee](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8). For that matter, bike maps can be absurdly complex, like [this catastrophe from Brookfield](https://www.ci.brookfield.wi.us/DocumentCenter/View/1362/pedestrian_bike_path_map?bidId=). Anyway:
 
 Solid green lines are on-street, paved bike lanes including: dedicated bike lanes are the most common (1-2 bicycle-designated parallel lines between traffic and curb), buffered bike lanes (zebra stripes between dedicated lane and vehicular traffic), or protected (by a barrier, duh). Milwaukee has has bidirectional [cycle tracks](https://nacto.org/publication/urban-bikeway-design-guide/cycle-tracks/raised-cycle-tracks/). If you're biking on streets, any street with a solid green line are your best bets. Prioritize  cycle tracks (like Mayfair Road's or the rumored 2020 Chase Ave cycle tracks), over concrete divider-protected lanes, over buffered lanes, over dedicated lanes. Safety first.
 
@@ -15,11 +15,19 @@ Other random colors are off-street, paved bike trails except those colors which 
 
 Question: in keeping with the safety-first spirit of this map, should it include parkways? E.g. the OLT Kinnickinnic Line from 20th St west to McCarty Park. Parkways are not usually marked for cyclists with on-street paint markings, and signs are often inconsistent. If this map were to include parkways, routes/layers such as the Menomonee and Root River Lines would be filled out, their segments connected. Unfortunately, due to a bug, I can't yet use dotted lines (of the same color) that would otherwise stand for sharrows, shared lanes, curb lanes, *and parkways*.
 
-A few observations on the state of bikeable Milwaukee: holy crow, City, you have some work to do. Buffering/protecting lanes down the length of National, Mitchell or Burnham, maybe Beloit? - and definitely Oklafreakinghoma. West Milwaukee has an opportunity to connect Greenfield Ave, and meanwhile we're still waiting for a reliable & safe Eastside north-south route (Van Buren? Jeff & Jack?), a Florida/Davidson street bridge, the list goes on... Though you'd think that a city (MKE) with such an affinity for its sibling Pittsburgh, would take a hint from PBG and get some more dang bridges, but I digress.
-
 Fellow pedants of all kinds, I'm sure you'll let me know which pieces of this map are missing. ;)
 
 Ride safely! *Be seen*!
+
+----------------------------------------------------------------------------------------------------------------
+
+A few observations on the state of bikeable Milwaukee: 
+
+Holy crow, City, you have some work to do. Buffering/protecting lanes down the length of National, Mitchell or Burnham, maybe Beloit? - and definitely Oklafreakinghoma. West Milwaukee has an opportunity to connect Greenfield Ave, and meanwhile we're still waiting for a reliable & safe Eastside north-south route (Van Buren? Jeff & Jack?), a Florida/Davidson street bridge, the list goes on... Though you'd think that a city (MKE) with such an affinity for its sibling Pittsburgh, would take a hint from PBG and get some more dang bridges, but I digress.
+
+Bike lanes in Milwaukee seem to exist in most cases for traffic calming or road dieting, rather than actually helping people get around or commute. Like who besides me once ever blue moon would willing ride their bike on Forest Home? Milwaukee would really benefit from adopting a more progressive stance on bike infrastructure: more bike lanes and road dieting in the right ways and places could ideally result in less reckless driving, more bike commuters, and less traffic/vehicle volume on the streets. Cars are cholesterol to city streets; we're not IN traffic, we ARE traffic. Sounds like diet and exercise are the prescriptions in both cases.
+
+Finally, all roads in Milwaukee seem to lead to...the Couture. Gee. 
 
 ------------------------------------------------------------------------------------------------------------------
 
