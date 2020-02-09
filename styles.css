@@ -15,10 +15,11 @@ header {
 	justify-content: space-between;
 	text-align: center;
 	padding: 30px 10%;
-	font-weight: 500;
+	font-weight: 700;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
+	font-size: 30px;
 	text-decoration: none;
+	color: #0088a9
 }
 
 .nav_links {
@@ -28,6 +29,7 @@ header {
 .nav_links li {
 	display: inline-block;
 	padding: 10px 20px;
+	font-size: 16px;
 }
 
 .nav_links li a {
