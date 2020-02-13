@@ -1,7 +1,7 @@
 # MKE-bike
-Milwaukee's Bike Lanes &amp; Trails
+Nearly every bike lane &amp; in Milwaukee mapped
 
-For your preseason consideration, almost every bike-friendly-ish surface in Milwaukee. Why did I do this? What can I say - the City's own maps haven't been updated in a decade (2011!!), while very infomative the [City's 2010 master plan PDF has NO maps in its Maps chapter(!)](https://city.milwaukee.gov/ImageLibrary/Groups/cityBikePed/MilwaukeebyBike2010-Plan.pdf), Google Maps' Bike layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, the weather turnt, hibernation, beer, all of Seinfeld is on Hulu... 
+For your preseason consideration, almost every bike-friendly-ish surface in Milwaukee. Why did I do this? What can I say - the City's own maps haven't been updated in a decade (2011!!), while very infomative the [City's 2010 master bike plan PDF has NO maps in its Maps chapter(!)](https://city.milwaukee.gov/ImageLibrary/Groups/cityBikePed/MilwaukeebyBike2010-Plan.pdf), Google Maps' Bike layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, the weather turnt, hibernation, beer, all of Seinfeld is on Hulu... 
 
 **tldr:** one bike map to rule them all, desktop and mobile friendly, and in the darkness bind all them other bad maps. 
 
