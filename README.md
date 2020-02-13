@@ -18,7 +18,7 @@ Solid green lines are on-street, paved bike lanes including:
 * Milwaukee also has bidirectional [cycle tracks](https://nacto.org/publication/urban-bikeway-design-guide/cycle-tracks/raised-cycle-tracks/), raised and unraised, and Tosa has a bunch of [green bike boxes]
 (https://nacto.org/publication/urban-bikeway-design-guide/intersection-treatments/bike-boxes/)
 
-If you're biking on streets, any street with solid green lines (on this map) are your best bets. Prioritize cycle tracks (like Mayfair Road's or the rumored 2020 Chase Ave cycle tracks), over concrete divider-protected lanes, over buffered lanes, over dedicated lanes. Safety first.
+If you're biking on streets, any street with solid green lines (on this map) are your best bets. Prioritize cycle tracks (like Mayfair between Bluemound & the Hank Aaron/I-94, or the rumored 2020 Chase Ave cycle tracks), over concrete divider-protected lanes, over buffered lanes, over dedicated lanes. Safety first.
 
 Fluorescent yellow-green lines (will be dotted in the future) are used for shared bike lanes
 
@@ -28,11 +28,11 @@ Fluorescent yellow-green lines (will be dotted in the future) are used for share
 
 The City's Most Likely to Get You Doored awards probably go to all of North Ave, N 16th and 17th near Marquette, and Erie St in the Third Ward. I don't know if the width from parked car mirrors to lane line is a full 1.5m, but I'm probably not going to be the one to measure them.
 
-Other random colors are off-street, paved bike trails, except the [Oak Leaf Trail system](https://county.milwaukee.gov/County-Files/Parks-Department/Photo-Gallery/Explore/Trails/OLT-System-map-0619.pdf)'s so called *lines* ("Zip Line," "South Shore Line," etc.) are color-matched to the County Parks' map. But because we're so lucky to have so, so many off-street paved bike trails in Milwaukee County, I kind of ran out of colors to label them all. I welcome any feedback from those with visual impairments or map colorists so we can find some better colorways for these layers.
+Other colors are off-street, paved bike trails, except the [Oak Leaf Trail system](https://county.milwaukee.gov/County-Files/Parks-Department/Photo-Gallery/Explore/Trails/OLT-System-map-0619.pdf)'s so called *lines* ("Zip Line," "South Shore Line," etc.) are color-matched to the County Parks' map. But because we're so lucky to have so, so many off-street paved bike trails in Milwaukee County, I kind of ran out of colors to label them all. I welcome any feedback from those with visual impairments or map colorists so we can find some better colorways for these layers than ochre, puke, etc.
 
-Question: in keeping with the safety-first spirit of this map, should it include parkways? E.g. the OLT Kinnickinnic Line from 20th St west to McCarty Park. Parkways are not usually marked for cyclists with on-street paint markings, and signs are often inconsistent. If this map were to include parkways, routes/layers such as the Menomonee and Root River Lines would be filled out, their segments connected. Unfortunately, due to a bug, I can't yet use dotted lines (of the same color) that would otherwise stand for sharrows, shared lanes, curb lanes, *and parkways*.
+Question: in keeping with the safety-first spirit of this map, should it include parkways? The OLT Kinnickinnic Line from 20th St west to McCarty Park, through Jackson Park and the Kinnickinnic River Parkway, but it's the only parkway I've mapped so far. Parkways are not usually marked for cyclists with on-street paint markings, and signs are often inconsistent. If this map were to include parkways, routes/layers such as the Menomonee and Root River Lines would be filled out, their segments connected. Unfortunately, due to a bug, I can't yet use dotted lines (of the same color) that would otherwise stand for sharrows, shared lanes, curb lanes, *and parkways*.
 
-Fellow pedants of all kinds, I'm sure you'll let me know which pieces of this map are missing. ;)
+Fellow pedants of all kinds, I'm sure you'll let me know which streets are missing. ;)
 
 Ride safely! *Be seen*!
 
@@ -51,7 +51,7 @@ Oh and check this shit out: all ~~roads~~ bike trails in Milwaukee seem to lead 
 
 ------------------------------------------------------------------------------------------------------------------
 
-Know your laws:
+Know your laws: 
 post both laws + map solo to miltownbiking then x-post both to mke as parent-child
 
 ------------------------------------------------------------------------------------------------------------------
