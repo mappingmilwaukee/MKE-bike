@@ -1,28 +1,30 @@
 # MKE-bike
 Nearly every bike lane &amp; trail in Milwaukee, mapped
 
-For your preseason consideration, almost every bike-friendly-ish surface in Milwaukee. Why did I do this? What can I say - the City's own maps haven't been updated in a decade (2011[!!](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8)), while very infomative the [City's 2010 master bike plan PDF has NO maps in its Maps chapter(!)](https://city.milwaukee.gov/ImageLibrary/Groups/cityBikePed/MilwaukeebyBike2010-Plan.pdf), Google Maps' Bike layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, the weather turnt, hibernation, beer, all of Seinfeld is on Hulu... 
+For your preseason consideration, almost every bike-friendly-ish surface in Milwaukee. Why did I do this? What can I say - the City's own maps haven't been updated in a decade (2011[!!](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8)), the [City's 2010 master bike plan PDF has NO maps in its Maps chapter(!)](https://city.milwaukee.gov/ImageLibrary/Groups/cityBikePed/MilwaukeebyBike2010-Plan.pdf), Google Maps' Bike layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, the weather turnt, hibernation, beer, all of Seinfeld is on Hulu... 
 
-**tldr:** one bike map to rule them all, desktop and mobile friendly, and in the darkness bind all them other bad maps. 
+**tldr:** one bike map to rule them all, desktop and mobile friendly, and in the darkness bind all them other bad maps to Hell. 
 
-Layers of lanes and trails are in the top right corner. Street segments are clickable for more details. This map maps all types of on-street bike lanes and paved off-street trails. Unlike most bike maps, this one does not include *bicycle routes*, which are only marked with small, vague signs in unnoticeable places, and on bad maps. Bike routes are usually connectors between lanes and/or trails, and easily intuited. Plus, when bike maps do show bike routes, the maps are crazy busy - looking at you, [City of Milwaukee](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8). For that matter, bike maps can be absurdly complex, like [this angel hair pasta catastrophe from Brookfield](https://www.ci.brookfield.wi.us/DocumentCenter/View/1362/pedestrian_bike_path_map?bidId=). Anyway:
+Layers of lanes and trails are in the top right corner. Street segments are clickable for more details. This map maps all types of on-street bike lanes and paved off-street trails. Unlike most bike maps, this one does not include *bicycle routes*, which are only marked with small, vague signs in unnoticeable places, and on bad bike maps. *Bike routes* are usually connectors between lanes and/or trails, easily intuited or completely unintuitive. Plus, when bike maps *do* show bike routes, the maps can be crazy confusing - looking at you, [City of Milwaukee](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8). For that matter, bike maps can be absurdly complex, like [this angel hair pasta catastrophe from Brookfield](https://www.ci.brookfield.wi.us/DocumentCenter/View/1362/pedestrian_bike_path_map?bidId=). Anyway:
 
-Solid green lines are on-street, paved bike lanes including:  
+Solid green lines are on-street paved bike lanes, including:  
 
-* dedicated bike lanes are the most common (a lane with 1-2 parallel lines between moving traffic and curb, sometimes green but usually not)
+* dedicated bike lanes are the most common (a lane with 1-2 parallel lines between moving traffic and curb, sometimes with green paint but usually not)
 
-* buffered bike lanes (zebra stripes between dedicated lane and vehicular traffic)  
+* buffered bike lanes (zebra stripes separating automotive vehicular traffic from dedicated bike lanes)  
 
 * protected (by a barrier, duh)
 
 * Milwaukee also has bidirectional [cycle tracks](https://nacto.org/publication/urban-bikeway-design-guide/cycle-tracks/raised-cycle-tracks/), raised and unraised, and Tosa has a bunch of [green bike boxes]
 (https://nacto.org/publication/urban-bikeway-design-guide/intersection-treatments/bike-boxes/)
 
-If you're biking on streets, any street with solid green lines (on this map) are your best bets. Prioritize cycle tracks (like Mayfair between Bluemound & the Hank Aaron/I-94, or the rumored 2020 Chase Ave cycle tracks), over concrete divider-protected lanes, over buffered lanes, over dedicated lanes. Safety first.
+* Milwaukee also has a few raised dedicated lanes, like on Bay St in Bay View, but since they're dedicated lanes that are kind of buffered but also kind of protected, I haven't marked them specially
 
-Fluorescent yellow-green lines (will be dotted in the future) are used for shared bike lanes
+If you're biking anywhere, prioritize the off-street trails, like the Oaf Leaf lines. If you're biking on streets, any street with solid green lines (on this map) are your best bets. Prioritize cycle tracks (like Mayfair between Bluemound & the Hank Aaron/I-94, or the rumored 2020 Chase Ave cycle tracks), over concrete divider-protected lanes, over buffered lanes, over dedicated lanes. Safety first.
 
-* Shared driving/biking lanes are marked on-street painted sharrows, which are [symbols of a bicyclist with two chevrons](https://www.bicycling.com/news/a20044419/what-are-sharrows-used-for/). Not all bike routes have sharrows; sharrows do not always mark an official bike route. Sharrows indicate that moving vehicles must share the same lane and bikes have a clearer right-of-way.
+Fluorescent yellow-green lines (will be dotted in the future) are used for shared bike lanes:
+
+* Shared driving/biking lanes are marked on-street painted sharrows, which are [symbols of a bicyclist with two chevrons](https://www.bicycling.com/news/a20044419/what-are-sharrows-used-for/). Sharrows indicate that moving motor vehicles and bikes must share the same lane, and bikes have a clearer right-of-way. Sharrows sometimes but do not always mark official bike routes, but not all bike routes have sharrows. Bike routes and sharrows suck. Paint doesn't save lives.
 
 * Shared parking lanes, aka Curb Lanes, are indicated by a curbside sign of a black and white diamond that may or may not also be painted on-street; bicyclists must share the lane with parked cars, and you might as well volunteer to get doored. Both are much less helpful than on-street lanes and off-street trails, but we'll take what we can get.
 
