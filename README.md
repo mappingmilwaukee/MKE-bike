@@ -1,5 +1,5 @@
 # MKE-bike
-Nearly every bike lane &amp; in Milwaukee mapped
+Nearly every bike lane &amp; trail in Milwaukee, mapped
 
 For your preseason consideration, almost every bike-friendly-ish surface in Milwaukee. Why did I do this? What can I say - the City's own maps haven't been updated in a decade (2011[!!](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8)), while very infomative the [City's 2010 master bike plan PDF has NO maps in its Maps chapter(!)](https://city.milwaukee.gov/ImageLibrary/Groups/cityBikePed/MilwaukeebyBike2010-Plan.pdf), Google Maps' Bike layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, the weather turnt, hibernation, beer, all of Seinfeld is on Hulu... 
 
@@ -30,11 +30,15 @@ The City's Most Likely to Get You Doored awards probably go to all of North Ave,
 
 Other colors are off-street, paved bike trails, except the [Oak Leaf Trail system](https://county.milwaukee.gov/County-Files/Parks-Department/Photo-Gallery/Explore/Trails/OLT-System-map-0619.pdf)'s so called *lines* ("Zip Line," "South Shore Line," etc.) are color-matched to the County Parks' map. But because we're so lucky to have so, so many off-street paved bike trails in Milwaukee County, I kind of ran out of colors to label them all. I welcome any feedback from those with visual impairments or map colorists so we can find some better colorways for these layers than ochre, puke, etc.
 
-Question: in keeping with the safety-first spirit of this map, should it include parkways? The OLT Kinnickinnic Line from 20th St west to McCarty Park, through Jackson Park and the Kinnickinnic River Parkway, but it's the only parkway I've mapped so far because it kind of fills out the southside and I wanted to envision what the complete OLT KK River Line and KK River Trail merger would look like in [maybe roughly 2022](https://www.railstotrails.org/trailblog/2015/january/13/wisconsins-kinnickinnic-river-trail/). Anyway, parkways are not usually marked for cyclists with on-street paint markings, and signs are often inconsistent. If this map were to include parkways, routes/layers such as the Menomonee and Root River Lines would be filled out, their segments connected. Unfortunately, due to a bug, I can't yet use dotted lines (of the same color) that would otherwise stand for sharrows, shared lanes, curb lanes, *and parkways*.
-
 Fellow pedants of all kinds, I'm sure you'll let me know which streets are missing. ;)
 
 Ride safely! *Be seen*!
+
+----------------------------------------------------------------------------------------------------------------
+
+Question: in keeping with the safety-first spirit of this map, should it include parkways? The OLT Kinnickinnic Line from 20th St west to McCarty Park, through Jackson Park and the Kinnickinnic River Parkway, but it's the only parkway I've mapped so far because it kind of fills out the southside and I wanted to envision what the complete OLT KK River Line and KK River Trail merger would look like in [maybe roughly 2022](https://www.railstotrails.org/trailblog/2015/january/13/wisconsins-kinnickinnic-river-trail/). Anyway, parkways are not usually marked for cyclists with on-street paint markings, and signs are often inconsistent. If this map were to include parkways, routes/layers such as the Menomonee and Root River Lines would be filled out, their segments connected. Unfortunately, due to a bug, I can't yet use dotted lines (of the same color) that would otherwise stand for sharrows, shared lanes, curb lanes, *and parkways*.
+
+Question: Can anyone account for any *actual, legitimate* bike lanes with on-street paint or curb signs along Lake Drive in Shorewood (Capitol to Glendale Ave) or Whitefish Bay (Glendale to Silver Spring)? I had someone tell me there are, but they only appear to be shared sometimes-parking lanes or an unmarked shoulder. I'm hesitant to map any park of Lake Dr until it unambiguously has explicit bike infrastructure - as every map of proposed bike infrastructure the City has ever put out. I can't believe it's taking so long to do away with those ridiculous you-can-park-here-sometimes-and-drive-here-most-times lanes in this city, they're fucking dangerous for everyone, and I hate them.
 
 ----------------------------------------------------------------------------------------------------------------
 
