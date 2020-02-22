@@ -34,7 +34,9 @@ Other colors are off-street, paved bike trails, except the [Oak Leaf Trail syste
 
 Fellow pedants of all kinds, I'm sure you'll let me know which streets are missing. ;)
 
-Ride safely! *Be seen*!
+[Know your laws]! Ride safely! *Be seen*!
+
+Hey mods, sidebar? ;)
 
 ----------------------------------------------------------------------------------------------------------------
 
