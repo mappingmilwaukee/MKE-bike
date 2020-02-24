@@ -64,16 +64,37 @@ post both laws + map solo to miltownbiking then x-post both to mke as parent-chi
 
 ------------------------------------------------------------------------------------------------------------------
 
-Know your laws:
-Wisconsin Statutes, Chapter 346: Rules of the Road Among them:
-340.01(5)(5e)(5s): definitions of bicycles, bicycle lanes, and bicycle ways.
+#Know your laws!
 
-Bicycles' rights as vehicles: 346.02(4)(a): Subject to the special provisions applicable to bicycles, every person riding a bicycle upon a roadway or shoulder of a highway is granted all the rights and is subject to all the duties that this chapter grants or applies to the operator of a vehicle, except those provisions that by their express terms apply only to motor vehicles or that by their very nature would have no application to bicycles...
 
-Signals: 346.35 Signals are required from either hand/arm. In brief:Left turn or U-turn — Hand and arm extended horizontally.Right turn — Hand and arm extended upward. Stop or decrease speed — Hand and arm extended downward.
+###Bicycles as vehicles:
+[340.01(5)](https://docs.legis.wisconsin.gov/statutes/statutes/340/01/5): Bicycles are vehicles. 
+[346.02(4)(a)](https://docs.legis.wisconsin.gov/statutes/statutes/346/I/02/4/a): Bicycle operates have the same rights as motor vehicles and subject to same responsibilities of motor vehicle drivers, "except those provisions that by their express terms apply only to motor vehicles or that by their very nature would have no application to bicycles..."
 
-Passing: 346.075: The operator of a motor vehicle overtaking a bicycle, electric scooter, or electric personal assistive mobility device proceeding in the same direction shall exercise due care, leaving a safe distance, but in no case less than 3 feet clearance when passing the bicycle..., and shall maintain clearance until safely past the overtaken bicycle... Thankfully WI is among the many states that require 3 feet - https://www.ncsl.org/research/transportation/safely-passing-bicyclists.aspx but shoutout to Pennsylvania at 4 feet! Not like drivers care, I'm sure. https://www.bikeleague.org/StateBikeLaws
+###Signals:
+[346.34(1)(b)]:(https://docs.legis.wisconsin.gov/statutes/statutes/346/V/34/1/b) Signals **ARE required** from a bike continously during at least the last 50 feet before a turn or lane change.
+346.34(1)(b): Signals are **NOT required if** the bicyclist decides both hands are needed on the handlebars **for their own safety**. 
+[346.35](https://docs.legis.wisconsin.gov/statutes/statutes/346/V/35): Signals are required from either hand/arm. Briefly: Left turn or U-turn — Hand and arm extended horizontally. Right turn — Hand and arm extended upward. Stop or decrease speed — Hand and arm extended downward.
 
-Use of sidewalks: 346.94(1): Driving on sidewalk. Except as authorized in s. 23.33 (4) (f) or when the sidewalk is an all-terrain vehicle route, as defined in s. 23.33 (1) (c) or an off-highway motorcycle route, as defined in s. 23.335 (1) (u), the operator of a vehicle may not drive upon any sidewalk area except at a permanent or temporarily established driveway unless permitted to do so by the local authorities.
+###Passing:
+[346.075](https://docs.legis.wisconsin.gov/statutes/statutes/346/II/075): **"The operator of a motor vehicle overtaking a bicycle, electric scooter, or electric personal assistive mobility device proceeding in the same direction shall exercise due care, leaving a safe distance, but in no case less than 3 feet clearance when passing the bicycle..., and shall maintain clearance until safely past the overtaken bicycle..."** Thankfully WI is among the many states that require 3 feet - https://www.ncsl.org/research/transportation/safely-passing-bicyclists.aspx but shoutout to Pennsylvania at 4 feet! Not like most drivers give a shit, I'm sure. https://www.bikeleague.org/StateBikeLaws
 
-Bicycling at night:And for funsies:45secs
+###Use of sidewalks:
+[346.94(1)](https://docs.legis.wisconsin.gov/document/statutes/346.94(1): Vehicle operators - including bicyclists on bicycles - **"may not drive upon any sidewalk** area except at a permanent or temporarily established driveway unless permitted to do so by the local authorities."
+
+###Bicycling at night:
+[347.489(1)](https://docs.legis.wisconsin.gov/document/statutes/347.489(1): A **front white *light*** and **rear red *reflector* are required** on streets, paths, trails, etc. The headlight must be visible 500 feet away; the rear red reflector must be visible 50-500 feet away. Blinking rear read lights are recommended, and cheap, so what's your excuse.
+
+###Parking your 3-ton armor-plated dozen-cup-holding living rooms in bike lanes:
+Fucking don't. You deserve your fine or tow, asshole. We don't care that you just ran inside for 2 minutes with your blinkers on - *that is not a parking space.* Granted, the law is vague for *stopping* your car in a bike lane with or without blinkers, but you're still breaking the law by *driving onto* the bike lane, so you know what, if you can someone magically elevate your car straight up from the driving lane, over three feet, and straight down onto the bike lane, I'll eat my hat and you can park/stop there. [346.94(12)](https://docs.legis.wisconsin.gov/document/statutes/346.94(12): "**No operator of a motor vehicle may drive upon a bicycle lane or bicycle way except to enter a driveway, to merge into a bicycle lane before turning at an intersection, or to enter or leave a parking space located adjacent to the bicycle lane or bicycle way.** Persons operating a motor vehicle upon a bicycle lane or bicycle way shall yield the right-of-way to all bicycles, electric scooters, and electric personal assistive mobility devices within the bicycle lane or bicycle way."
+
+###Penalty violation for parking in the fucking bike lane:
+Not enough. [346.95(1)](https://docs.legis.wisconsin.gov/statutes/statutes/346/XIII/95/1): [A]ny person violating s. ...346.94(12)...may be required to forfeit not less than $20 nor more than $40 for the first offense and not less than $50 nor more than $100 for the 2nd or subsequent conviction within a year.
+
+###For funsies, red lights: 
+[346.37(1)(c)4](https://docs.legis.wisconsin.gov/document/statutes/346.37(1)(c)4): A "...bicycle facing a red signal at an intersection may, after stopping as required...**for not less than 45 seconds, proceed cautiously through the intersection before the signal turns green if no other vehicles are present** at the intersection to actuate the signal and the operator of the...bicycle reasonably believes the signal is vehicle actuated. **The operator of a ...bicycle proceeding through a red signal under this subdivision shall yield the right-of-way to any vehicular traffic, pedestrian, personal delivery device, bicyclist, or rider of an electric scooter or an electric personal assistive mobility device** proceeding through a green signal at the intersection or lawfully within a crosswalk or using the intersection..."
+
+https://www.bikeleague.org/StateBikeLaws
+http://wibikelaw.com/rules-of-the-road.php
+https://docs.legis.wisconsin.gov/statutes/statutes
+
