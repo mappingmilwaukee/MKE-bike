@@ -63,11 +63,6 @@ Oh and check this shit out: all ~~roads~~ bike trails in Milwaukee seem to lead 
 
 ------------------------------------------------------------------------------------------------------------------
 
-Know your laws: 
-post both laws + map solo to miltownbiking then x-post both to mke as parent-child
-
-------------------------------------------------------------------------------------------------------------------
-
 #Know your laws!
 
 ###Bicycles as vehicles:
@@ -76,8 +71,8 @@ post both laws + map solo to miltownbiking then x-post both to mke as parent-chi
 
 ###Signals:
 [346.34(1)(b)](https://docs.legis.wisconsin.gov/statutes/statutes/346/V/34/1/b): Signals **ARE required** from a bike continously during at least the last 50 feet before a turn or lane change.
-346.34(1)(b): Signals are **NOT required if** the bicyclist decides both hands are needed on the handlebars **for their own safety**. 
-[346.35](https://docs.legis.wisconsin.gov/statutes/statutes/346/V/35): Signals are required from either hand/arm. Briefly: Left turn or U-turn — Hand and arm extended horizontally. Right turn — Hand and arm extended upward. Stop or decrease speed — Hand and arm extended downward.
+346.34(1)(b): Signals are **NOT required if the bicyclist decides both hands are needed on the handlebars for their own safety**. 
+[346.35](https://docs.legis.wisconsin.gov/statutes/statutes/346/V/35): Signals are required from either hand/arm. Briefly: Left turn or U-turn — Hand and arm extended horizontally. Right turn — Hand and arm extended upward. Stop or decrease speed — Hand and arm extended downward. Or I just point - breaking the law, but *can* be less ambiguous for drivers.
 
 ###Passing:
 [346.075](https://docs.legis.wisconsin.gov/statutes/statutes/346/II/075): **"The operator of a motor vehicle overtaking a bicycle, electric scooter, or electric personal assistive mobility device proceeding in the same direction shall exercise due care, leaving a safe distance, but in no case less than 3 feet clearance when passing the bicycle..., and shall maintain clearance until safely past the overtaken bicycle..."** Thankfully WI is among the [many states that require 3 feet](https://www.ncsl.org/research/transportation/safely-passing-bicyclists.aspx) but shoutout to Pennsylvania at 4 feet! Not like most drivers give a shit, I'm sure. Though we should be glad to live in a [place ranked among the bike friendliest states](https://www.bikeleague.org/StateBikeLaws).
