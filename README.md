@@ -1,7 +1,9 @@
 # MKE-bike
-Nearly every bike lane &amp; trail in Milwaukee, mapped
+Every* bike lane & trail in Milwaukee mapped
 
-For your preseason consideration, almost every bike-friendly-ish surface in Milwaukee. Why did I do this? What can I say - the City's own maps haven't been updated in a decade (2011[!!](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8)), the [City's 2010 master bike plan PDF has NO maps in its Maps chapter(!)](https://city.milwaukee.gov/ImageLibrary/Groups/cityBikePed/MilwaukeebyBike2010-Plan.pdf), Google Maps' Bike layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, the weather turnt, hibernation, beer, all of Seinfeld is on Hulu... 
+*Nearly
+
+For your preseason consideration, almost every bike-friendly-ish surface in Milwaukee. Why did I do this? What can I say - the City's own maps haven't been updated in a decade (2011[!!](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8)), the [City's 2010 master bike plan PDF has NO maps in its Maps chapter(!)](https://city.milwaukee.gov/ImageLibrary/Groups/cityBikePed/MilwaukeebyBike2010-Plan.pdf), Google Maps' Bicycling layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, the fall weather turnt, hibernation, beer, all of Seinfeld is on Hulu... 
 
 **tldr:** one bike map to rule them all, desktop and mobile friendly, and in the darkness bind all them other bad maps to Hell. 
 
@@ -28,11 +30,13 @@ Fluorescent yellow-green lines (will be dotted in the future) are used for share
 
 * Shared parking lanes, aka Curb Lanes, are indicated by a curbside sign of a black and white diamond that may or may not also be painted on-street; bicyclists must share the lane with parked cars, and you might as well volunteer to get doored. Both are much less helpful than on-street lanes and off-street trails, but we'll take what we can get.
 
-The City's Most Likely to Get You Doored awards probably go to all of North Ave, N 16th and 17th near Marquette, and Erie St in the Third Ward. I don't know if the width from parked car mirrors to lane line is a full 1.5m, but I'm probably not going to be the one to measure them.
+The City's Most Likely to Get You Doored awards probably go to all of North Ave, N 16th and 17th near Marquette, Prospect & Farwell, all of Brady, and Erie St in the Third Ward. I don't know if the width from parked car mirrors to lane line is a full 1.5m, but I'm probably not going to be the one to measure them.
 
 Other colors are off-street, paved bike trails, except the [Oak Leaf Trail system](https://county.milwaukee.gov/County-Files/Parks-Department/Photo-Gallery/Explore/Trails/OLT-System-map-0619.pdf)'s so called *lines* ("Zip Line," "South Shore Line," etc.) are color-matched to the County Parks' map. But because we're so lucky to have so, so many off-street paved bike trails in Milwaukee County, I kind of ran out of colors to label them all. I welcome any feedback from those with visual impairments or map colorists so we can find some better colorways for these layers than ochre, puke, etc.
 
 Fellow pedants of all kinds, I'm sure you'll let me know which streets are missing. ;)
+
+Bicyclists, call 414-286-2489 to report cars in bike lanes, obstructions in bike lanes, etc.
 
 [Know your laws]! Ride safely! *Be seen*!
 
@@ -66,27 +70,26 @@ post both laws + map solo to miltownbiking then x-post both to mke as parent-chi
 
 #Know your laws!
 
-
 ###Bicycles as vehicles:
 [340.01(5)](https://docs.legis.wisconsin.gov/statutes/statutes/340/01/5): Bicycles are vehicles. 
 [346.02(4)(a)](https://docs.legis.wisconsin.gov/statutes/statutes/346/I/02/4/a): Bicycle operates have the same rights as motor vehicles and subject to same responsibilities of motor vehicle drivers, "except those provisions that by their express terms apply only to motor vehicles or that by their very nature would have no application to bicycles..."
 
 ###Signals:
-[346.34(1)(b)]:(https://docs.legis.wisconsin.gov/statutes/statutes/346/V/34/1/b) Signals **ARE required** from a bike continously during at least the last 50 feet before a turn or lane change.
+[346.34(1)(b)](https://docs.legis.wisconsin.gov/statutes/statutes/346/V/34/1/b): Signals **ARE required** from a bike continously during at least the last 50 feet before a turn or lane change.
 346.34(1)(b): Signals are **NOT required if** the bicyclist decides both hands are needed on the handlebars **for their own safety**. 
 [346.35](https://docs.legis.wisconsin.gov/statutes/statutes/346/V/35): Signals are required from either hand/arm. Briefly: Left turn or U-turn — Hand and arm extended horizontally. Right turn — Hand and arm extended upward. Stop or decrease speed — Hand and arm extended downward.
 
 ###Passing:
-[346.075](https://docs.legis.wisconsin.gov/statutes/statutes/346/II/075): **"The operator of a motor vehicle overtaking a bicycle, electric scooter, or electric personal assistive mobility device proceeding in the same direction shall exercise due care, leaving a safe distance, but in no case less than 3 feet clearance when passing the bicycle..., and shall maintain clearance until safely past the overtaken bicycle..."** Thankfully WI is among the many states that require 3 feet - https://www.ncsl.org/research/transportation/safely-passing-bicyclists.aspx but shoutout to Pennsylvania at 4 feet! Not like most drivers give a shit, I'm sure. https://www.bikeleague.org/StateBikeLaws
+[346.075](https://docs.legis.wisconsin.gov/statutes/statutes/346/II/075): **"The operator of a motor vehicle overtaking a bicycle, electric scooter, or electric personal assistive mobility device proceeding in the same direction shall exercise due care, leaving a safe distance, but in no case less than 3 feet clearance when passing the bicycle..., and shall maintain clearance until safely past the overtaken bicycle..."** Thankfully WI is among the [many states that require 3 feet](https://www.ncsl.org/research/transportation/safely-passing-bicyclists.aspx) but shoutout to Pennsylvania at 4 feet! Not like most drivers give a shit, I'm sure. Though we should be glad to live in a [place ranked among the bike friendliest states](https://www.bikeleague.org/StateBikeLaws).
 
 ###Use of sidewalks:
 [346.94(1)](https://docs.legis.wisconsin.gov/document/statutes/346.94(1): Vehicle operators - including bicyclists on bicycles - **"may not drive upon any sidewalk** area except at a permanent or temporarily established driveway unless permitted to do so by the local authorities."
 
 ###Bicycling at night:
-[347.489(1)](https://docs.legis.wisconsin.gov/document/statutes/347.489(1): A **front white *light*** and **rear red *reflector* are required** on streets, paths, trails, etc. The headlight must be visible 500 feet away; the rear red reflector must be visible 50-500 feet away. Blinking rear read lights are recommended, and cheap, so what's your excuse.
+[347.489(1)](https://docs.legis.wisconsin.gov/document/statutes/347.489(1): A **front white *light*** and **rear red *reflector* are required** on streets, paths, trails, etc. The headlight must be visible 500 feet away; the rear red reflector must be visible 50-500 feet away. Blinking rear red lights are highly recommended, and cheap, so what's your excuse. Bonus points: put your red blinker on the back of your helmet! You sit a good deal higher than your seat post, you know?
 
-###Parking your 3-ton armor-plated dozen-cup-holding living rooms in bike lanes:
-Fucking don't. You deserve your fine or tow, asshole. We don't care that you just ran inside for 2 minutes with your blinkers on - *that is not a parking space.* Granted, the law is vague for *stopping* your car in a bike lane with or without blinkers, but you're still breaking the law by *driving onto* the bike lane, so you know what, if you can someone magically elevate your car straight up from the driving lane, over three feet, and straight down onto the bike lane, I'll eat my hat and you can park/stop there. [346.94(12)](https://docs.legis.wisconsin.gov/document/statutes/346.94(12): "**No operator of a motor vehicle may drive upon a bicycle lane or bicycle way except to enter a driveway, to merge into a bicycle lane before turning at an intersection, or to enter or leave a parking space located adjacent to the bicycle lane or bicycle way.** Persons operating a motor vehicle upon a bicycle lane or bicycle way shall yield the right-of-way to all bicycles, electric scooters, and electric personal assistive mobility devices within the bicycle lane or bicycle way."
+###Parking your 3-ton armor-plated living rooms with a dozen cup-holders in bike lanes:
+Fucking don't. You deserve your fine or tow, asshole, and I will call 414-286-2489 (Milwaukee's 311 equivalent) to report you to the city every single time. We don't care that you just went inside for only 2 minutes, and you put your blinkers on - *bike lanes are not for parking your car.* Granted, the law is vague for *stopping* your car in a bike lane with or without blinkers, and I would argue that if you stop your running car and exit it you've parked it, but you're still breaking the law by *driving onto* the bike lane, so you know what, if you can someone magically elevate your car straight up from the driving lane, over three feet, and straight down onto the bike lane, I'll eat my hat and you can park/stop there. [346.94(12)](https://docs.legis.wisconsin.gov/document/statutes/346.94(12): "**No operator of a motor vehicle may drive upon a bicycle lane or bicycle way except to enter a driveway, to merge into a bicycle lane before turning at an intersection, or to enter or leave a parking space located adjacent to the bicycle lane or bicycle way.** Persons operating a motor vehicle upon a bicycle lane or bicycle way shall yield the right-of-way to all bicycles, electric scooters, and electric personal assistive mobility devices within the bicycle lane or bicycle way."
 
 ###Penalty violation for parking in the fucking bike lane:
 Not enough. [346.95(1)](https://docs.legis.wisconsin.gov/statutes/statutes/346/XIII/95/1): [A]ny person violating s. ...346.94(12)...may be required to forfeit not less than $20 nor more than $40 for the first offense and not less than $50 nor more than $100 for the 2nd or subsequent conviction within a year.
