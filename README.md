@@ -39,9 +39,9 @@ Fellow pedants of all kinds, I'm sure you'll let me know which streets are missi
 Bicyclists, call 414-286-2489 to report cars in bike lanes, obstructions in bike lanes, etc.
 
 [National Bike Month: May 1 - May 31  
-National Bike to Work Week: Mon. May 11 - Sun. May 17
-National Bike to Work Day: Fri. May 15](https://bikeleague.org/bikemonth)
-[Wisconsin Bike Week: Fri. May 29 - Sun. June 7](https://wisconsinbikefed.org/events/wisconsin-bike-week/)
+National Bike to Work Week: Mon. May 11 - Sun. May 17  
+National Bike to Work Day: Fri. May 15](https://bikeleague.org/bikemonth)  
+[Wisconsin Bike Week: Fri. May 29 - Sun. June 7](https://wisconsinbikefed.org/events/wisconsin-bike-week/)  
 
 [Know your laws]! Ride safely! *Be seen*!
 
