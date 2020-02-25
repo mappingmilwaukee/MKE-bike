@@ -43,7 +43,7 @@ National Bike to Work Week: Mon. May 11 - Sun. May 17
 National Bike to Work Day: Fri. May 15](https://bikeleague.org/bikemonth)  
 [Wisconsin Bike Week: Fri. May 29 - Sun. June 7](https://wisconsinbikefed.org/events/wisconsin-bike-week/)  
 
-[Know your laws]! Ride safely! *Be seen*!
+[Know your laws](https://old.reddit.com/r/MiltownBiking/comments/f9gnh9/know_your_laws/)! Ride safely! *Be seen*!
 
 Hey mods, sidebar? ;)
 
