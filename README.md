@@ -7,6 +7,7 @@ For your preseason consideration, almost every bike-friendly-ish surface in Milw
 
 **tldr:** one bike map to rule them all, desktop and mobile friendly, and in the darkness bind all them other bad maps to Hell. 
 
+**About this map:**  
 Layers of lanes and trails are in the top right corner. Street segments are clickable for more details. This map maps all types of on-street bike lanes and paved off-street trails. Unlike most bike maps, this one does not include *bicycle routes*, which are only marked with small, vague signs in unnoticeable places, and on bad bike maps. *Bike routes* are usually connectors between lanes and/or trails, easily intuited or completely unintuitive. Plus, when bike maps *do* show bike routes, the maps can be crazy confusing - looking at you, [City of Milwaukee](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8). For that matter, bike maps can be absurdly complex, like [this angel hair pasta catastrophe from Brookfield](https://www.ci.brookfield.wi.us/DocumentCenter/View/1362/pedestrian_bike_path_map?bidId=). Anyway:
 
 Solid green lines are on-street paved bike lanes, including:  
@@ -36,7 +37,7 @@ Other colors are off-street, paved bike trails, except the [Oak Leaf Trail syste
 
 Fellow pedants of all kinds, I'm sure you'll let me know which streets are missing. ;)
 
-Bicyclists, call 414-286-2489 to report cars in bike lanes, obstructions in bike lanes, etc.
+Bicyclists, call **Milwaukee's 311 equivalent 414-286-2489* to report cars in bike lanes, obstructions in bike lanes, etc.
 
 [National Bike Month: May 1 - May 31  
 National Bike to Work Week: Mon. May 11 - Sun. May 17  
