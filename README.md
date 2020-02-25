@@ -62,9 +62,11 @@ Holy crow, City, you have some work to do. A better bikeable Milwaukee needs:
 -Buffered or protected lanes for crucial north & southbound travel on or along South 27th, South 35th, and/or South 43rd. Best bet would be Jersey barriers for a bidirectional cycle track.
 -Meanwhile we're still waiting for a reliable & safe Eastside north-south route (Van Buren? Jeff & Jack?), another Third Ward to Walker's Point bridge, the list goes on... Though you'd think that a city (MKE) with such an affinity for its sibling Pittsburgh, would take a hint from PBG and get some more dang bridges, but I digress.
 
-Bike lanes in Milwaukee seem to exist in most cases for traffic calming or road dieting, rather than actually helping people get around or commute. Like who besides me once ever blue moon would willing ride their bike on Forest Home? Milwaukee would really benefit from adopting a more progressive stance on bike infrastructure: more bike lanes and road dieting in the right ways and places could ideally result in less reckless driving, more bike commuters, and less traffic/vehicle volume on the streets. Cars are cholesterol to city streets; we're not IN traffic, we ARE traffic. Sounds like diet and exercise are the prescriptions in both cases.
+Bike lanes in Milwaukee seem to exist in most cases for traffic calming or road dieting, rather than actually helping people get around or commute. Milwaukee would really benefit from adopting a more progressive stance on bike infrastructure: more bike lanes and road dieting in the right ways and places could ideally result in less reckless driving, fewer deaths and maulings by cars, more bike commuters, and less traffic/vehicle volume on the streets. Cars are cholesterol to city streets; we're not IN traffic, we ARE traffic. Sounds like diet and exercise are the prescriptions in both cases.
 
-Oh and check this shit out: all ~~roads~~ bike trails in Milwaukee seem to lead to...the Couture. Gee. 
+Nearly 40,000 Americans *alone* die every year from cars. Paging/plugging the [The War on Cars](www.thewaroncars.org). I love driving and cars, but I love alive and healthy people more, and you should too.
+
+Oh and check this shit out: all ~~roads~~ bike trails in ~~Rome~~ Milwaukee seem to lead to...the Couture. Gee. 
 
 ------------------------------------------------------------------------------------------------------------------
 
