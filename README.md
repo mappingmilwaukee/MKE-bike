@@ -37,7 +37,7 @@ The City's Most Likely to Get You Doored awards probably go to all of North Ave,
 
 Fellow pedants of all kinds, I'm sure you'll let me know which streets are missing. ;)
 
-Bicyclists, call **Milwaukee's 311 equivalent 414-286-2489* to report cars in bike lanes, obstructions in bike lanes, etc.
+Call **Milwaukee's 311 equivalent 414-286-2489** to report cars in bike lanes, obstructions in bike lanes, etc.
 
 [National Bike Month: May 1 - May 31  
 National Bike to Work Week: Mon. May 11 - Sun. May 17  
