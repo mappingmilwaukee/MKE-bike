@@ -23,7 +23,7 @@ Layers of lanes and trails are in the top right corner. Street segments are clic
 
 * Milwaukee also has a few raised dedicated lanes, like on Bay St in Bay View, but since they're dedicated lanes that are kind of buffered but also kind of protected, I haven't marked them specially
 
-If you're biking anywhere, prioritize the off-street trails, like the Oaf Leaf lines. If you're biking on streets, any street with solid green lines (on this map) are your best bets. Prioritize cycle tracks (like Mayfair between Bluemound & the Hank Aaron/I-94, or the rumored 2020 Chase Ave cycle tracks), over concrete divider-protected lanes, over buffered lanes, over dedicated lanes. Safety first.
+If you're biking anywhere, prioritize the off-street trails, like the Oaf Leaf lines. If you're biking on streets, any street with solid green lines (on this map) are your best bets. Prioritize cycle tracks (like Mayfair between Bluemound & the Hank Aaron/I-94), over concrete divider-protected lanes, over buffered lanes, over dedicated lanes. Safety first.
 
 **Fluorescent yellow-green lines** (will be dotted in the future) are used for shared bike lanes:
 
