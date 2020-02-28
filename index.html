@@ -94,14 +94,14 @@
         var layer_GoogleSatelliteHybrid_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
-	    maxZoom: 23,
+			maxZoom: 23,
         });
         layer_GoogleSatelliteHybrid_0;
         map.addLayer(layer_GoogleSatelliteHybrid_0);
         var layer_GoogleMaps_1 = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
-	    maxZoom: 23,
+			maxZoom: 23,
         });
         layer_GoogleMaps_1;
         map.addLayer(layer_GoogleMaps_1);
@@ -989,18 +989,6 @@
                     <tr>\
                         <th scope="row">trail name</th>\
                         <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">direction</th>\
-                        <td>' + (feature.properties['direction'] !== null ? Autolinker.link(String(feature.properties['direction'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">segment</th>\
-                        <td>' + (feature.properties['segment'] !== null ? Autolinker.link(String(feature.properties['segment'])) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
