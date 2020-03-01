@@ -45,8 +45,8 @@
         <script src="data/OLTZipLine_9.js"></script>
         <script src="data/OLTLakeParkLoop_10.js"></script>
         <script src="data/OLTBeerlineB_11.js"></script>
-        <script src="data/OLTBeerlineExtension_12.js"></script>
-        <script src="data/OLTKinnickinnicLine_13.js"></script>
+        <script src="data/OLTKinnickinnicLine_12.js"></script>
+        <script src="data/OLTBeerlineExtension_13.js"></script>
         <script src="data/OLTSouthShoreLine_14.js"></script>
         <script src="data/OLTOakCreekLine_15.js"></script>
         <script src="data/OLTDrexelConnector_16.js"></script>
@@ -94,14 +94,14 @@
         var layer_GoogleSatelliteHybrid_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
-			maxZoom: 23,
+			maxZoom: 23, 
         });
         layer_GoogleSatelliteHybrid_0;
         map.addLayer(layer_GoogleSatelliteHybrid_0);
         var layer_GoogleMaps_1 = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
-			maxZoom: 23,
+			maxZoom: 23, 
         });
         layer_GoogleMaps_1;
         map.addLayer(layer_GoogleMaps_1);
@@ -579,7 +579,7 @@
         });
         bounds_group.addLayer(layer_OLTBeerlineB_11);
         map.addLayer(layer_OLTBeerlineB_11);
-        function pop_OLTBeerlineExtension_12(feature, layer) {
+        function pop_OLTKinnickinnicLine_12(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -601,54 +601,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTBeerlineExtension_12_0() {
+        function style_OLTKinnickinnicLine_12_0() {
             return {
-                pane: 'pane_OLTBeerlineExtension_12',
-                opacity: 1,
-                color: 'rgba(237,65,76,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 4.0,
-                fillOpacity: 0,
-            }
-        }
-        map.createPane('pane_OLTBeerlineExtension_12');
-        map.getPane('pane_OLTBeerlineExtension_12').style.zIndex = 412;
-        map.getPane('pane_OLTBeerlineExtension_12').style['mix-blend-mode'] = 'normal';
-        var layer_OLTBeerlineExtension_12 = new L.geoJson(json_OLTBeerlineExtension_12, {
-            attribution: '',
-            pane: 'pane_OLTBeerlineExtension_12',
-            onEachFeature: pop_OLTBeerlineExtension_12,
-            style: style_OLTBeerlineExtension_12_0,
-        });
-        bounds_group.addLayer(layer_OLTBeerlineExtension_12);
-        map.addLayer(layer_OLTBeerlineExtension_12);
-        function pop_OLTKinnickinnicLine_13(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_OLTKinnickinnicLine_13_0() {
-            return {
-                pane: 'pane_OLTKinnickinnicLine_13',
+                pane: 'pane_OLTKinnickinnicLine_12',
                 opacity: 1,
                 color: 'rgba(254,237,21,1.0)',
                 dashArray: '',
@@ -658,17 +613,62 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTKinnickinnicLine_13');
-        map.getPane('pane_OLTKinnickinnicLine_13').style.zIndex = 413;
-        map.getPane('pane_OLTKinnickinnicLine_13').style['mix-blend-mode'] = 'normal';
-        var layer_OLTKinnickinnicLine_13 = new L.geoJson(json_OLTKinnickinnicLine_13, {
+        map.createPane('pane_OLTKinnickinnicLine_12');
+        map.getPane('pane_OLTKinnickinnicLine_12').style.zIndex = 412;
+        map.getPane('pane_OLTKinnickinnicLine_12').style['mix-blend-mode'] = 'normal';
+        var layer_OLTKinnickinnicLine_12 = new L.geoJson(json_OLTKinnickinnicLine_12, {
             attribution: '',
-            pane: 'pane_OLTKinnickinnicLine_13',
-            onEachFeature: pop_OLTKinnickinnicLine_13,
-            style: style_OLTKinnickinnicLine_13_0,
+            pane: 'pane_OLTKinnickinnicLine_12',
+            onEachFeature: pop_OLTKinnickinnicLine_12,
+            style: style_OLTKinnickinnicLine_12_0,
         });
-        bounds_group.addLayer(layer_OLTKinnickinnicLine_13);
-        map.addLayer(layer_OLTKinnickinnicLine_13);
+        bounds_group.addLayer(layer_OLTKinnickinnicLine_12);
+        map.addLayer(layer_OLTKinnickinnicLine_12);
+        function pop_OLTBeerlineExtension_13(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <th scope="row">trail name</th>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">trail line</th>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">lane type</th>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">notes</th>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_OLTBeerlineExtension_13_0() {
+            return {
+                pane: 'pane_OLTBeerlineExtension_13',
+                opacity: 1,
+                color: 'rgba(237,65,76,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 4.0,
+                fillOpacity: 0,
+            }
+        }
+        map.createPane('pane_OLTBeerlineExtension_13');
+        map.getPane('pane_OLTBeerlineExtension_13').style.zIndex = 413;
+        map.getPane('pane_OLTBeerlineExtension_13').style['mix-blend-mode'] = 'normal';
+        var layer_OLTBeerlineExtension_13 = new L.geoJson(json_OLTBeerlineExtension_13, {
+            attribution: '',
+            pane: 'pane_OLTBeerlineExtension_13',
+            onEachFeature: pop_OLTBeerlineExtension_13,
+            style: style_OLTBeerlineExtension_13_0,
+        });
+        bounds_group.addLayer(layer_OLTBeerlineExtension_13);
+        map.addLayer(layer_OLTBeerlineExtension_13);
         function pop_OLTSouthShoreLine_14(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1491,7 +1491,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/PowerlineTrail_32.png" /> Powerline Trail': layer_PowerlineTrail_32,'<img src="legend/OzaukeeInterurbanTrail_31.png" /> Ozaukee Interurban Trail': layer_OzaukeeInterurbanTrail_31,'<img src="legend/MuskegoRecreationTrail_30.png" /> Muskego Recreation Trail': layer_MuskegoRecreationTrail_30,'<img src="legend/FranklinHikeBikeTrail_29.png" /> Franklin Hike-Bike Trail': layer_FranklinHikeBikeTrail_29,'<img src="legend/WEEnergiesTrail_28.png" /> WE Energies Trail': layer_WEEnergiesTrail_28,'<img src="legend/BrookfieldGreenway_27.png" /> Brookfield Greenway': layer_BrookfieldGreenway_27,'<img src="legend/NewBerlinTrail_26.png" /> New Berlin Trail': layer_NewBerlinTrail_26,'<img src="legend/WestAllisCrossTownConnector_25.png" /> West Allis Cross Town Connector': layer_WestAllisCrossTownConnector_25,'<img src="legend/NojoshingTrail_24.png" /> Nojoshing Trail': layer_NojoshingTrail_24,'<img src="legend/20thStPowerline_23.png" /> 20th St Powerline': layer_20thStPowerline_23,'<img src="legend/HankAaronStateTrail_22.png" /> Hank Aaron State Trail': layer_HankAaronStateTrail_22,'<img src="legend/KinnickinnicRiverTrail_21.png" /> Kinnickinnic River Trail': layer_KinnickinnicRiverTrail_21,'<img src="legend/OLTBradleyConnector_20.png" /> OLT Bradley Connector': layer_OLTBradleyConnector_20,'<img src="legend/OLTMenomoneeLine_19.png" /> OLT Menomonee Line': layer_OLTMenomoneeLine_19,'<img src="legend/OLTWhitnallParkLoop_18.png" /> OLT Whitnall Park Loop': layer_OLTWhitnallParkLoop_18,'<img src="legend/OLTRootRiverLine_17.png" /> OLT Root River Line': layer_OLTRootRiverLine_17,'<img src="legend/OLTDrexelConnector_16.png" /> OLT Drexel Connector': layer_OLTDrexelConnector_16,'<img src="legend/OLTOakCreekLine_15.png" /> OLT Oak Creek Line': layer_OLTOakCreekLine_15,'<img src="legend/OLTSouthShoreLine_14.png" /> OLT South Shore Line': layer_OLTSouthShoreLine_14,'<img src="legend/OLTKinnickinnicLine_13.png" /> OLT Kinnickinnic Line': layer_OLTKinnickinnicLine_13,'<img src="legend/OLTBeerlineExtension_12.png" /> OLT Beerline Extension': layer_OLTBeerlineExtension_12,'<img src="legend/OLTBeerlineB_11.png" /> OLT Beerline B': layer_OLTBeerlineB_11,'<img src="legend/OLTLakeParkLoop_10.png" /> OLT Lake Park Loop': layer_OLTLakeParkLoop_10,'<img src="legend/OLTZipLine_9.png" /> OLT Zip Line': layer_OLTZipLine_9,'<img src="legend/OLTMilwaukeeRiverLine_8.png" /> OLT Milwaukee River Line': layer_OLTMilwaukeeRiverLine_8,'<img src="legend/Northsideshared_7.png" /> Northside shared': layer_Northsideshared_7,'<img src="legend/Northsidelanes_6.png" /> Northside lanes': layer_Northsidelanes_6,'<img src="legend/Eastsideshared_5.png" /> Eastside shared': layer_Eastsideshared_5,'<img src="legend/Eastsidelanes_4.png" /> Eastside lanes': layer_Eastsidelanes_4,'<img src="legend/Southsideshared_3.png" /> Southside shared': layer_Southsideshared_3,'<img src="legend/Southsidelanes_2.png" /> Southside lanes': layer_Southsidelanes_2,"Google Maps": layer_GoogleMaps_1,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/PowerlineTrail_32.png" /> Powerline Trail': layer_PowerlineTrail_32,'<img src="legend/OzaukeeInterurbanTrail_31.png" /> Ozaukee Interurban Trail': layer_OzaukeeInterurbanTrail_31,'<img src="legend/MuskegoRecreationTrail_30.png" /> Muskego Recreation Trail': layer_MuskegoRecreationTrail_30,'<img src="legend/FranklinHikeBikeTrail_29.png" /> Franklin Hike-Bike Trail': layer_FranklinHikeBikeTrail_29,'<img src="legend/WEEnergiesTrail_28.png" /> WE Energies Trail': layer_WEEnergiesTrail_28,'<img src="legend/BrookfieldGreenway_27.png" /> Brookfield Greenway': layer_BrookfieldGreenway_27,'<img src="legend/NewBerlinTrail_26.png" /> New Berlin Trail': layer_NewBerlinTrail_26,'<img src="legend/WestAllisCrossTownConnector_25.png" /> West Allis Cross Town Connector': layer_WestAllisCrossTownConnector_25,'<img src="legend/NojoshingTrail_24.png" /> Nojoshing Trail': layer_NojoshingTrail_24,'<img src="legend/20thStPowerline_23.png" /> 20th St Powerline': layer_20thStPowerline_23,'<img src="legend/HankAaronStateTrail_22.png" /> Hank Aaron State Trail': layer_HankAaronStateTrail_22,'<img src="legend/KinnickinnicRiverTrail_21.png" /> Kinnickinnic River Trail': layer_KinnickinnicRiverTrail_21,'<img src="legend/OLTBradleyConnector_20.png" /> OLT Bradley Connector': layer_OLTBradleyConnector_20,'<img src="legend/OLTMenomoneeLine_19.png" /> OLT Menomonee Line': layer_OLTMenomoneeLine_19,'<img src="legend/OLTWhitnallParkLoop_18.png" /> OLT Whitnall Park Loop': layer_OLTWhitnallParkLoop_18,'<img src="legend/OLTRootRiverLine_17.png" /> OLT Root River Line': layer_OLTRootRiverLine_17,'<img src="legend/OLTDrexelConnector_16.png" /> OLT Drexel Connector': layer_OLTDrexelConnector_16,'<img src="legend/OLTOakCreekLine_15.png" /> OLT Oak Creek Line': layer_OLTOakCreekLine_15,'<img src="legend/OLTSouthShoreLine_14.png" /> OLT South Shore Line': layer_OLTSouthShoreLine_14,'<img src="legend/OLTBeerlineExtension_13.png" /> OLT Beerline Extension': layer_OLTBeerlineExtension_13,'<img src="legend/OLTKinnickinnicLine_12.png" /> OLT Kinnickinnic Line': layer_OLTKinnickinnicLine_12,'<img src="legend/OLTBeerlineB_11.png" /> OLT Beerline B': layer_OLTBeerlineB_11,'<img src="legend/OLTLakeParkLoop_10.png" /> OLT Lake Park Loop': layer_OLTLakeParkLoop_10,'<img src="legend/OLTZipLine_9.png" /> OLT Zip Line': layer_OLTZipLine_9,'<img src="legend/OLTMilwaukeeRiverLine_8.png" /> OLT Milwaukee River Line': layer_OLTMilwaukeeRiverLine_8,'<img src="legend/Northsideshared_7.png" /> Northside shared': layer_Northsideshared_7,'<img src="legend/Northsidelanes_6.png" /> Northside lanes': layer_Northsidelanes_6,'<img src="legend/Eastsideshared_5.png" /> Eastside shared': layer_Eastsideshared_5,'<img src="legend/Eastsidelanes_4.png" /> Eastside lanes': layer_Eastsidelanes_4,'<img src="legend/Southsideshared_3.png" /> Southside shared': layer_Southsideshared_3,'<img src="legend/Southsidelanes_2.png" /> Southside lanes': layer_Southsidelanes_2,"Google Maps": layer_GoogleMaps_1,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_0,}).addTo(map);
         setBounds();
         </script>
     </body>
