@@ -35,37 +35,33 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="data/Southsidelanes_2.js"></script>
-        <script src="data/Southsideshared_3.js"></script>
-        <script src="data/Eastsidelanes_4.js"></script>
-        <script src="data/Eastsideshared_5.js"></script>
-        <script src="data/Northsidelanes_6.js"></script>
-        <script src="data/Northsideshared_7.js"></script>
-        <script src="data/OLTMilwaukeeRiverLine_8.js"></script>
-        <script src="data/OLTZipLine_9.js"></script>
-        <script src="data/OLTLakeParkLoop_10.js"></script>
-        <script src="data/OLTBeerlineB_11.js"></script>
-        <script src="data/OLTKinnickinnicLine_12.js"></script>
-        <script src="data/OLTBeerlineExtension_13.js"></script>
-        <script src="data/OLTSouthShoreLine_14.js"></script>
-        <script src="data/OLTOakCreekLine_15.js"></script>
-        <script src="data/OLTDrexelConnector_16.js"></script>
-        <script src="data/OLTRootRiverLine_17.js"></script>
-        <script src="data/OLTWhitnallParkLoop_18.js"></script>
-        <script src="data/OLTMenomoneeLine_19.js"></script>
-        <script src="data/OLTBradleyConnector_20.js"></script>
-        <script src="data/KinnickinnicRiverTrail_21.js"></script>
-        <script src="data/HankAaronStateTrail_22.js"></script>
-        <script src="data/20thStPowerline_23.js"></script>
-        <script src="data/NojoshingTrail_24.js"></script>
-        <script src="data/WestAllisCrossTownConnector_25.js"></script>
-        <script src="data/NewBerlinTrail_26.js"></script>
-        <script src="data/BrookfieldGreenway_27.js"></script>
-        <script src="data/WEEnergiesTrail_28.js"></script>
-        <script src="data/FranklinHikeBikeTrail_29.js"></script>
-        <script src="data/MuskegoRecreationTrail_30.js"></script>
-        <script src="data/OzaukeeInterurbanTrail_31.js"></script>
-        <script src="data/PowerlineTrail_32.js"></script>
+        <script src="data/sharedlanes_2.js"></script>
+        <script src="data/streetlanes_3.js"></script>
+        <script src="data/OLTMilwaukeeRiverLine_4.js"></script>
+        <script src="data/OLTZipLine_5.js"></script>
+        <script src="data/OLTLakeParkLoop_6.js"></script>
+        <script src="data/OLTBeerlineB_7.js"></script>
+        <script src="data/OLTKinnickinnicLine_8.js"></script>
+        <script src="data/OLTBeerlineExtension_9.js"></script>
+        <script src="data/OLTSouthShoreLine_10.js"></script>
+        <script src="data/OLTOakCreekLine_11.js"></script>
+        <script src="data/OLTDrexelConnector_12.js"></script>
+        <script src="data/OLTRootRiverLine_13.js"></script>
+        <script src="data/OLTWhitnallParkLoop_14.js"></script>
+        <script src="data/OLTMenomoneeLine_15.js"></script>
+        <script src="data/OLTBradleyConnector_16.js"></script>
+        <script src="data/KinnickinnicRiverTrail_17.js"></script>
+        <script src="data/HankAaronStateTrail_18.js"></script>
+        <script src="data/20thStPowerline_19.js"></script>
+        <script src="data/NojoshingTrail_20.js"></script>
+        <script src="data/WestAllisCrossTownConnector_21.js"></script>
+        <script src="data/NewBerlinTrail_22.js"></script>
+        <script src="data/BrookfieldGreenway_23.js"></script>
+        <script src="data/WEEnergiesTrail_24.js"></script>
+        <script src="data/FranklinHikeBikeTrail_25.js"></script>
+        <script src="data/MuskegoRecreationTrail_26.js"></script>
+        <script src="data/OzaukeeInterurbanTrail_27.js"></script>
+        <script src="data/PowerlineTrail_28.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:22, minZoom:10
@@ -105,7 +101,7 @@
         });
         layer_GoogleMaps_1;
         map.addLayer(layer_GoogleMaps_1);
-        function pop_Southsidelanes_2(feature, layer) {
+        function pop_sharedlanes_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">street</th>\
@@ -131,58 +127,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Southsidelanes_2_0() {
+        function style_sharedlanes_2_0() {
             return {
-                pane: 'pane_Southsidelanes_2',
-                opacity: 1,
-                color: 'rgba(34,182,1,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 4.0,
-                fillOpacity: 0,
-            }
-        }
-        map.createPane('pane_Southsidelanes_2');
-        map.getPane('pane_Southsidelanes_2').style.zIndex = 402;
-        map.getPane('pane_Southsidelanes_2').style['mix-blend-mode'] = 'normal';
-        var layer_Southsidelanes_2 = new L.geoJson(json_Southsidelanes_2, {
-            attribution: '',
-            pane: 'pane_Southsidelanes_2',
-            onEachFeature: pop_Southsidelanes_2,
-            style: style_Southsidelanes_2_0,
-        });
-        bounds_group.addLayer(layer_Southsidelanes_2);
-        map.addLayer(layer_Southsidelanes_2);
-        function pop_Southsideshared_3(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <th scope="row">street</th>\
-                        <td>' + (feature.properties['street'] !== null ? Autolinker.link(String(feature.properties['street'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">direction</th>\
-                        <td>' + (feature.properties['direction'] !== null ? Autolinker.link(String(feature.properties['direction'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">segment</th>\
-                        <td>' + (feature.properties['segment'] !== null ? Autolinker.link(String(feature.properties['segment'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_Southsideshared_3_0() {
-            return {
-                pane: 'pane_Southsideshared_3',
+                pane: 'pane_sharedlanes_2',
                 opacity: 1,
                 color: 'rgba(154,255,1,1.0)',
                 dashArray: '',
@@ -192,18 +139,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_Southsideshared_3');
-        map.getPane('pane_Southsideshared_3').style.zIndex = 403;
-        map.getPane('pane_Southsideshared_3').style['mix-blend-mode'] = 'normal';
-        var layer_Southsideshared_3 = new L.geoJson(json_Southsideshared_3, {
+        map.createPane('pane_sharedlanes_2');
+        map.getPane('pane_sharedlanes_2').style.zIndex = 402;
+        map.getPane('pane_sharedlanes_2').style['mix-blend-mode'] = 'normal';
+        var layer_sharedlanes_2 = new L.geoJson(json_sharedlanes_2, {
             attribution: '',
-            pane: 'pane_Southsideshared_3',
-            onEachFeature: pop_Southsideshared_3,
-            style: style_Southsideshared_3_0,
+            pane: 'pane_sharedlanes_2',
+            onEachFeature: pop_sharedlanes_2,
+            style: style_sharedlanes_2_0,
         });
-        bounds_group.addLayer(layer_Southsideshared_3);
-        map.addLayer(layer_Southsideshared_3);
-        function pop_Eastsidelanes_4(feature, layer) {
+        bounds_group.addLayer(layer_sharedlanes_2);
+        map.addLayer(layer_sharedlanes_2);
+        function pop_streetlanes_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">street</th>\
@@ -229,9 +176,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Eastsidelanes_4_0() {
+        function style_streetlanes_3_0() {
             return {
-                pane: 'pane_Eastsidelanes_4',
+                pane: 'pane_streetlanes_3',
                 opacity: 1,
                 color: 'rgba(34,182,1,1.0)',
                 dashArray: '',
@@ -241,165 +188,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_Eastsidelanes_4');
-        map.getPane('pane_Eastsidelanes_4').style.zIndex = 404;
-        map.getPane('pane_Eastsidelanes_4').style['mix-blend-mode'] = 'normal';
-        var layer_Eastsidelanes_4 = new L.geoJson(json_Eastsidelanes_4, {
+        map.createPane('pane_streetlanes_3');
+        map.getPane('pane_streetlanes_3').style.zIndex = 403;
+        map.getPane('pane_streetlanes_3').style['mix-blend-mode'] = 'normal';
+        var layer_streetlanes_3 = new L.geoJson(json_streetlanes_3, {
             attribution: '',
-            pane: 'pane_Eastsidelanes_4',
-            onEachFeature: pop_Eastsidelanes_4,
-            style: style_Eastsidelanes_4_0,
+            pane: 'pane_streetlanes_3',
+            onEachFeature: pop_streetlanes_3,
+            style: style_streetlanes_3_0,
         });
-        bounds_group.addLayer(layer_Eastsidelanes_4);
-        map.addLayer(layer_Eastsidelanes_4);
-        function pop_Eastsideshared_5(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <th scope="row">street</th>\
-                        <td>' + (feature.properties['street'] !== null ? Autolinker.link(String(feature.properties['street'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">direction</th>\
-                        <td>' + (feature.properties['direction'] !== null ? Autolinker.link(String(feature.properties['direction'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">segment</th>\
-                        <td>' + (feature.properties['segment'] !== null ? Autolinker.link(String(feature.properties['segment'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_Eastsideshared_5_0() {
-            return {
-                pane: 'pane_Eastsideshared_5',
-                opacity: 1,
-                color: 'rgba(154,255,1,1.0)',
-                dashArray: '',
-                lineCap: 'round',
-                lineJoin: 'round',
-                weight: 4.0,
-                fillOpacity: 0,
-            }
-        }
-        map.createPane('pane_Eastsideshared_5');
-        map.getPane('pane_Eastsideshared_5').style.zIndex = 405;
-        map.getPane('pane_Eastsideshared_5').style['mix-blend-mode'] = 'normal';
-        var layer_Eastsideshared_5 = new L.geoJson(json_Eastsideshared_5, {
-            attribution: '',
-            pane: 'pane_Eastsideshared_5',
-            onEachFeature: pop_Eastsideshared_5,
-            style: style_Eastsideshared_5_0,
-        });
-        bounds_group.addLayer(layer_Eastsideshared_5);
-        map.addLayer(layer_Eastsideshared_5);
-        function pop_Northsidelanes_6(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <th scope="row">street</th>\
-                        <td>' + (feature.properties['street'] !== null ? Autolinker.link(String(feature.properties['street'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">direction</th>\
-                        <td>' + (feature.properties['direction'] !== null ? Autolinker.link(String(feature.properties['direction'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">segment</th>\
-                        <td>' + (feature.properties['segment'] !== null ? Autolinker.link(String(feature.properties['segment'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_Northsidelanes_6_0() {
-            return {
-                pane: 'pane_Northsidelanes_6',
-                opacity: 1,
-                color: 'rgba(34,182,1,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 4.0,
-                fillOpacity: 0,
-            }
-        }
-        map.createPane('pane_Northsidelanes_6');
-        map.getPane('pane_Northsidelanes_6').style.zIndex = 406;
-        map.getPane('pane_Northsidelanes_6').style['mix-blend-mode'] = 'normal';
-        var layer_Northsidelanes_6 = new L.geoJson(json_Northsidelanes_6, {
-            attribution: '',
-            pane: 'pane_Northsidelanes_6',
-            onEachFeature: pop_Northsidelanes_6,
-            style: style_Northsidelanes_6_0,
-        });
-        bounds_group.addLayer(layer_Northsidelanes_6);
-        map.addLayer(layer_Northsidelanes_6);
-        function pop_Northsideshared_7(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <th scope="row">street</th>\
-                        <td>' + (feature.properties['street'] !== null ? Autolinker.link(String(feature.properties['street'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">direction</th>\
-                        <td>' + (feature.properties['direction'] !== null ? Autolinker.link(String(feature.properties['direction'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">segment</th>\
-                        <td>' + (feature.properties['segment'] !== null ? Autolinker.link(String(feature.properties['segment'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_Northsideshared_7_0() {
-            return {
-                pane: 'pane_Northsideshared_7',
-                opacity: 1,
-                color: 'rgba(154,255,1,1.0)',
-                dashArray: '',
-                lineCap: 'round',
-                lineJoin: 'round',
-                weight: 4.0,
-                fillOpacity: 0,
-            }
-        }
-        map.createPane('pane_Northsideshared_7');
-        map.getPane('pane_Northsideshared_7').style.zIndex = 407;
-        map.getPane('pane_Northsideshared_7').style['mix-blend-mode'] = 'normal';
-        var layer_Northsideshared_7 = new L.geoJson(json_Northsideshared_7, {
-            attribution: '',
-            pane: 'pane_Northsideshared_7',
-            onEachFeature: pop_Northsideshared_7,
-            style: style_Northsideshared_7_0,
-        });
-        bounds_group.addLayer(layer_Northsideshared_7);
-        map.addLayer(layer_Northsideshared_7);
-        function pop_OLTMilwaukeeRiverLine_8(feature, layer) {
+        bounds_group.addLayer(layer_streetlanes_3);
+        map.addLayer(layer_streetlanes_3);
+        function pop_OLTMilwaukeeRiverLine_4(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -421,9 +221,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTMilwaukeeRiverLine_8_0() {
+        function style_OLTMilwaukeeRiverLine_4_0() {
             return {
-                pane: 'pane_OLTMilwaukeeRiverLine_8',
+                pane: 'pane_OLTMilwaukeeRiverLine_4',
                 opacity: 1,
                 color: 'rgba(0,166,223,1.0)',
                 dashArray: '',
@@ -433,18 +233,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTMilwaukeeRiverLine_8');
-        map.getPane('pane_OLTMilwaukeeRiverLine_8').style.zIndex = 408;
-        map.getPane('pane_OLTMilwaukeeRiverLine_8').style['mix-blend-mode'] = 'normal';
-        var layer_OLTMilwaukeeRiverLine_8 = new L.geoJson(json_OLTMilwaukeeRiverLine_8, {
+        map.createPane('pane_OLTMilwaukeeRiverLine_4');
+        map.getPane('pane_OLTMilwaukeeRiverLine_4').style.zIndex = 404;
+        map.getPane('pane_OLTMilwaukeeRiverLine_4').style['mix-blend-mode'] = 'normal';
+        var layer_OLTMilwaukeeRiverLine_4 = new L.geoJson(json_OLTMilwaukeeRiverLine_4, {
             attribution: '',
-            pane: 'pane_OLTMilwaukeeRiverLine_8',
-            onEachFeature: pop_OLTMilwaukeeRiverLine_8,
-            style: style_OLTMilwaukeeRiverLine_8_0,
+            pane: 'pane_OLTMilwaukeeRiverLine_4',
+            onEachFeature: pop_OLTMilwaukeeRiverLine_4,
+            style: style_OLTMilwaukeeRiverLine_4_0,
         });
-        bounds_group.addLayer(layer_OLTMilwaukeeRiverLine_8);
-        map.addLayer(layer_OLTMilwaukeeRiverLine_8);
-        function pop_OLTZipLine_9(feature, layer) {
+        bounds_group.addLayer(layer_OLTMilwaukeeRiverLine_4);
+        map.addLayer(layer_OLTMilwaukeeRiverLine_4);
+        function pop_OLTZipLine_5(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -466,9 +266,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTZipLine_9_0() {
+        function style_OLTZipLine_5_0() {
             return {
-                pane: 'pane_OLTZipLine_9',
+                pane: 'pane_OLTZipLine_5',
                 opacity: 1,
                 color: 'rgba(141,73,158,1.0)',
                 dashArray: '',
@@ -478,18 +278,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTZipLine_9');
-        map.getPane('pane_OLTZipLine_9').style.zIndex = 409;
-        map.getPane('pane_OLTZipLine_9').style['mix-blend-mode'] = 'normal';
-        var layer_OLTZipLine_9 = new L.geoJson(json_OLTZipLine_9, {
+        map.createPane('pane_OLTZipLine_5');
+        map.getPane('pane_OLTZipLine_5').style.zIndex = 405;
+        map.getPane('pane_OLTZipLine_5').style['mix-blend-mode'] = 'normal';
+        var layer_OLTZipLine_5 = new L.geoJson(json_OLTZipLine_5, {
             attribution: '',
-            pane: 'pane_OLTZipLine_9',
-            onEachFeature: pop_OLTZipLine_9,
-            style: style_OLTZipLine_9_0,
+            pane: 'pane_OLTZipLine_5',
+            onEachFeature: pop_OLTZipLine_5,
+            style: style_OLTZipLine_5_0,
         });
-        bounds_group.addLayer(layer_OLTZipLine_9);
-        map.addLayer(layer_OLTZipLine_9);
-        function pop_OLTLakeParkLoop_10(feature, layer) {
+        bounds_group.addLayer(layer_OLTZipLine_5);
+        map.addLayer(layer_OLTZipLine_5);
+        function pop_OLTLakeParkLoop_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -511,9 +311,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTLakeParkLoop_10_0() {
+        function style_OLTLakeParkLoop_6_0() {
             return {
-                pane: 'pane_OLTLakeParkLoop_10',
+                pane: 'pane_OLTLakeParkLoop_6',
                 opacity: 1,
                 color: 'rgba(43,46,125,1.0)',
                 dashArray: '',
@@ -523,18 +323,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTLakeParkLoop_10');
-        map.getPane('pane_OLTLakeParkLoop_10').style.zIndex = 410;
-        map.getPane('pane_OLTLakeParkLoop_10').style['mix-blend-mode'] = 'normal';
-        var layer_OLTLakeParkLoop_10 = new L.geoJson(json_OLTLakeParkLoop_10, {
+        map.createPane('pane_OLTLakeParkLoop_6');
+        map.getPane('pane_OLTLakeParkLoop_6').style.zIndex = 406;
+        map.getPane('pane_OLTLakeParkLoop_6').style['mix-blend-mode'] = 'normal';
+        var layer_OLTLakeParkLoop_6 = new L.geoJson(json_OLTLakeParkLoop_6, {
             attribution: '',
-            pane: 'pane_OLTLakeParkLoop_10',
-            onEachFeature: pop_OLTLakeParkLoop_10,
-            style: style_OLTLakeParkLoop_10_0,
+            pane: 'pane_OLTLakeParkLoop_6',
+            onEachFeature: pop_OLTLakeParkLoop_6,
+            style: style_OLTLakeParkLoop_6_0,
         });
-        bounds_group.addLayer(layer_OLTLakeParkLoop_10);
-        map.addLayer(layer_OLTLakeParkLoop_10);
-        function pop_OLTBeerlineB_11(feature, layer) {
+        bounds_group.addLayer(layer_OLTLakeParkLoop_6);
+        map.addLayer(layer_OLTLakeParkLoop_6);
+        function pop_OLTBeerlineB_7(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -556,9 +356,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTBeerlineB_11_0() {
+        function style_OLTBeerlineB_7_0() {
             return {
-                pane: 'pane_OLTBeerlineB_11',
+                pane: 'pane_OLTBeerlineB_7',
                 opacity: 1,
                 color: 'rgba(255,30,1,1.0)',
                 dashArray: '',
@@ -568,18 +368,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTBeerlineB_11');
-        map.getPane('pane_OLTBeerlineB_11').style.zIndex = 411;
-        map.getPane('pane_OLTBeerlineB_11').style['mix-blend-mode'] = 'normal';
-        var layer_OLTBeerlineB_11 = new L.geoJson(json_OLTBeerlineB_11, {
+        map.createPane('pane_OLTBeerlineB_7');
+        map.getPane('pane_OLTBeerlineB_7').style.zIndex = 407;
+        map.getPane('pane_OLTBeerlineB_7').style['mix-blend-mode'] = 'normal';
+        var layer_OLTBeerlineB_7 = new L.geoJson(json_OLTBeerlineB_7, {
             attribution: '',
-            pane: 'pane_OLTBeerlineB_11',
-            onEachFeature: pop_OLTBeerlineB_11,
-            style: style_OLTBeerlineB_11_0,
+            pane: 'pane_OLTBeerlineB_7',
+            onEachFeature: pop_OLTBeerlineB_7,
+            style: style_OLTBeerlineB_7_0,
         });
-        bounds_group.addLayer(layer_OLTBeerlineB_11);
-        map.addLayer(layer_OLTBeerlineB_11);
-        function pop_OLTKinnickinnicLine_12(feature, layer) {
+        bounds_group.addLayer(layer_OLTBeerlineB_7);
+        map.addLayer(layer_OLTBeerlineB_7);
+        function pop_OLTKinnickinnicLine_8(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -601,9 +401,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTKinnickinnicLine_12_0() {
+        function style_OLTKinnickinnicLine_8_0() {
             return {
-                pane: 'pane_OLTKinnickinnicLine_12',
+                pane: 'pane_OLTKinnickinnicLine_8',
                 opacity: 1,
                 color: 'rgba(254,237,21,1.0)',
                 dashArray: '',
@@ -613,18 +413,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTKinnickinnicLine_12');
-        map.getPane('pane_OLTKinnickinnicLine_12').style.zIndex = 412;
-        map.getPane('pane_OLTKinnickinnicLine_12').style['mix-blend-mode'] = 'normal';
-        var layer_OLTKinnickinnicLine_12 = new L.geoJson(json_OLTKinnickinnicLine_12, {
+        map.createPane('pane_OLTKinnickinnicLine_8');
+        map.getPane('pane_OLTKinnickinnicLine_8').style.zIndex = 408;
+        map.getPane('pane_OLTKinnickinnicLine_8').style['mix-blend-mode'] = 'normal';
+        var layer_OLTKinnickinnicLine_8 = new L.geoJson(json_OLTKinnickinnicLine_8, {
             attribution: '',
-            pane: 'pane_OLTKinnickinnicLine_12',
-            onEachFeature: pop_OLTKinnickinnicLine_12,
-            style: style_OLTKinnickinnicLine_12_0,
+            pane: 'pane_OLTKinnickinnicLine_8',
+            onEachFeature: pop_OLTKinnickinnicLine_8,
+            style: style_OLTKinnickinnicLine_8_0,
         });
-        bounds_group.addLayer(layer_OLTKinnickinnicLine_12);
-        map.addLayer(layer_OLTKinnickinnicLine_12);
-        function pop_OLTBeerlineExtension_13(feature, layer) {
+        bounds_group.addLayer(layer_OLTKinnickinnicLine_8);
+        map.addLayer(layer_OLTKinnickinnicLine_8);
+        function pop_OLTBeerlineExtension_9(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -646,9 +446,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTBeerlineExtension_13_0() {
+        function style_OLTBeerlineExtension_9_0() {
             return {
-                pane: 'pane_OLTBeerlineExtension_13',
+                pane: 'pane_OLTBeerlineExtension_9',
                 opacity: 1,
                 color: 'rgba(237,65,76,1.0)',
                 dashArray: '',
@@ -658,18 +458,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTBeerlineExtension_13');
-        map.getPane('pane_OLTBeerlineExtension_13').style.zIndex = 413;
-        map.getPane('pane_OLTBeerlineExtension_13').style['mix-blend-mode'] = 'normal';
-        var layer_OLTBeerlineExtension_13 = new L.geoJson(json_OLTBeerlineExtension_13, {
+        map.createPane('pane_OLTBeerlineExtension_9');
+        map.getPane('pane_OLTBeerlineExtension_9').style.zIndex = 409;
+        map.getPane('pane_OLTBeerlineExtension_9').style['mix-blend-mode'] = 'normal';
+        var layer_OLTBeerlineExtension_9 = new L.geoJson(json_OLTBeerlineExtension_9, {
             attribution: '',
-            pane: 'pane_OLTBeerlineExtension_13',
-            onEachFeature: pop_OLTBeerlineExtension_13,
-            style: style_OLTBeerlineExtension_13_0,
+            pane: 'pane_OLTBeerlineExtension_9',
+            onEachFeature: pop_OLTBeerlineExtension_9,
+            style: style_OLTBeerlineExtension_9_0,
         });
-        bounds_group.addLayer(layer_OLTBeerlineExtension_13);
-        map.addLayer(layer_OLTBeerlineExtension_13);
-        function pop_OLTSouthShoreLine_14(feature, layer) {
+        bounds_group.addLayer(layer_OLTBeerlineExtension_9);
+        map.addLayer(layer_OLTBeerlineExtension_9);
+        function pop_OLTSouthShoreLine_10(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -691,9 +491,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTSouthShoreLine_14_0() {
+        function style_OLTSouthShoreLine_10_0() {
             return {
-                pane: 'pane_OLTSouthShoreLine_14',
+                pane: 'pane_OLTSouthShoreLine_10',
                 opacity: 1,
                 color: 'rgba(238,23,47,1.0)',
                 dashArray: '',
@@ -703,18 +503,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTSouthShoreLine_14');
-        map.getPane('pane_OLTSouthShoreLine_14').style.zIndex = 414;
-        map.getPane('pane_OLTSouthShoreLine_14').style['mix-blend-mode'] = 'normal';
-        var layer_OLTSouthShoreLine_14 = new L.geoJson(json_OLTSouthShoreLine_14, {
+        map.createPane('pane_OLTSouthShoreLine_10');
+        map.getPane('pane_OLTSouthShoreLine_10').style.zIndex = 410;
+        map.getPane('pane_OLTSouthShoreLine_10').style['mix-blend-mode'] = 'normal';
+        var layer_OLTSouthShoreLine_10 = new L.geoJson(json_OLTSouthShoreLine_10, {
             attribution: '',
-            pane: 'pane_OLTSouthShoreLine_14',
-            onEachFeature: pop_OLTSouthShoreLine_14,
-            style: style_OLTSouthShoreLine_14_0,
+            pane: 'pane_OLTSouthShoreLine_10',
+            onEachFeature: pop_OLTSouthShoreLine_10,
+            style: style_OLTSouthShoreLine_10_0,
         });
-        bounds_group.addLayer(layer_OLTSouthShoreLine_14);
-        map.addLayer(layer_OLTSouthShoreLine_14);
-        function pop_OLTOakCreekLine_15(feature, layer) {
+        bounds_group.addLayer(layer_OLTSouthShoreLine_10);
+        map.addLayer(layer_OLTSouthShoreLine_10);
+        function pop_OLTOakCreekLine_11(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -736,9 +536,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTOakCreekLine_15_0() {
+        function style_OLTOakCreekLine_11_0() {
             return {
-                pane: 'pane_OLTOakCreekLine_15',
+                pane: 'pane_OLTOakCreekLine_11',
                 opacity: 1,
                 color: 'rgba(97,202,205,1.0)',
                 dashArray: '',
@@ -748,18 +548,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTOakCreekLine_15');
-        map.getPane('pane_OLTOakCreekLine_15').style.zIndex = 415;
-        map.getPane('pane_OLTOakCreekLine_15').style['mix-blend-mode'] = 'normal';
-        var layer_OLTOakCreekLine_15 = new L.geoJson(json_OLTOakCreekLine_15, {
+        map.createPane('pane_OLTOakCreekLine_11');
+        map.getPane('pane_OLTOakCreekLine_11').style.zIndex = 411;
+        map.getPane('pane_OLTOakCreekLine_11').style['mix-blend-mode'] = 'normal';
+        var layer_OLTOakCreekLine_11 = new L.geoJson(json_OLTOakCreekLine_11, {
             attribution: '',
-            pane: 'pane_OLTOakCreekLine_15',
-            onEachFeature: pop_OLTOakCreekLine_15,
-            style: style_OLTOakCreekLine_15_0,
+            pane: 'pane_OLTOakCreekLine_11',
+            onEachFeature: pop_OLTOakCreekLine_11,
+            style: style_OLTOakCreekLine_11_0,
         });
-        bounds_group.addLayer(layer_OLTOakCreekLine_15);
-        map.addLayer(layer_OLTOakCreekLine_15);
-        function pop_OLTDrexelConnector_16(feature, layer) {
+        bounds_group.addLayer(layer_OLTOakCreekLine_11);
+        map.addLayer(layer_OLTOakCreekLine_11);
+        function pop_OLTDrexelConnector_12(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -781,9 +581,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTDrexelConnector_16_0() {
+        function style_OLTDrexelConnector_12_0() {
             return {
-                pane: 'pane_OLTDrexelConnector_16',
+                pane: 'pane_OLTDrexelConnector_12',
                 opacity: 1,
                 color: 'rgba(124,61,35,1.0)',
                 dashArray: '',
@@ -793,18 +593,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTDrexelConnector_16');
-        map.getPane('pane_OLTDrexelConnector_16').style.zIndex = 416;
-        map.getPane('pane_OLTDrexelConnector_16').style['mix-blend-mode'] = 'normal';
-        var layer_OLTDrexelConnector_16 = new L.geoJson(json_OLTDrexelConnector_16, {
+        map.createPane('pane_OLTDrexelConnector_12');
+        map.getPane('pane_OLTDrexelConnector_12').style.zIndex = 412;
+        map.getPane('pane_OLTDrexelConnector_12').style['mix-blend-mode'] = 'normal';
+        var layer_OLTDrexelConnector_12 = new L.geoJson(json_OLTDrexelConnector_12, {
             attribution: '',
-            pane: 'pane_OLTDrexelConnector_16',
-            onEachFeature: pop_OLTDrexelConnector_16,
-            style: style_OLTDrexelConnector_16_0,
+            pane: 'pane_OLTDrexelConnector_12',
+            onEachFeature: pop_OLTDrexelConnector_12,
+            style: style_OLTDrexelConnector_12_0,
         });
-        bounds_group.addLayer(layer_OLTDrexelConnector_16);
-        map.addLayer(layer_OLTDrexelConnector_16);
-        function pop_OLTRootRiverLine_17(feature, layer) {
+        bounds_group.addLayer(layer_OLTDrexelConnector_12);
+        map.addLayer(layer_OLTDrexelConnector_12);
+        function pop_OLTRootRiverLine_13(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -826,9 +626,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTRootRiverLine_17_0() {
+        function style_OLTRootRiverLine_13_0() {
             return {
-                pane: 'pane_OLTRootRiverLine_17',
+                pane: 'pane_OLTRootRiverLine_13',
                 opacity: 1,
                 color: 'rgba(255,164,39,1.0)',
                 dashArray: '',
@@ -838,18 +638,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTRootRiverLine_17');
-        map.getPane('pane_OLTRootRiverLine_17').style.zIndex = 417;
-        map.getPane('pane_OLTRootRiverLine_17').style['mix-blend-mode'] = 'normal';
-        var layer_OLTRootRiverLine_17 = new L.geoJson(json_OLTRootRiverLine_17, {
+        map.createPane('pane_OLTRootRiverLine_13');
+        map.getPane('pane_OLTRootRiverLine_13').style.zIndex = 413;
+        map.getPane('pane_OLTRootRiverLine_13').style['mix-blend-mode'] = 'normal';
+        var layer_OLTRootRiverLine_13 = new L.geoJson(json_OLTRootRiverLine_13, {
             attribution: '',
-            pane: 'pane_OLTRootRiverLine_17',
-            onEachFeature: pop_OLTRootRiverLine_17,
-            style: style_OLTRootRiverLine_17_0,
+            pane: 'pane_OLTRootRiverLine_13',
+            onEachFeature: pop_OLTRootRiverLine_13,
+            style: style_OLTRootRiverLine_13_0,
         });
-        bounds_group.addLayer(layer_OLTRootRiverLine_17);
-        map.addLayer(layer_OLTRootRiverLine_17);
-        function pop_OLTWhitnallParkLoop_18(feature, layer) {
+        bounds_group.addLayer(layer_OLTRootRiverLine_13);
+        map.addLayer(layer_OLTRootRiverLine_13);
+        function pop_OLTWhitnallParkLoop_14(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -871,9 +671,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTWhitnallParkLoop_18_0() {
+        function style_OLTWhitnallParkLoop_14_0() {
             return {
-                pane: 'pane_OLTWhitnallParkLoop_18',
+                pane: 'pane_OLTWhitnallParkLoop_14',
                 opacity: 1,
                 color: 'rgba(43,46,125,1.0)',
                 dashArray: '',
@@ -883,18 +683,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTWhitnallParkLoop_18');
-        map.getPane('pane_OLTWhitnallParkLoop_18').style.zIndex = 418;
-        map.getPane('pane_OLTWhitnallParkLoop_18').style['mix-blend-mode'] = 'normal';
-        var layer_OLTWhitnallParkLoop_18 = new L.geoJson(json_OLTWhitnallParkLoop_18, {
+        map.createPane('pane_OLTWhitnallParkLoop_14');
+        map.getPane('pane_OLTWhitnallParkLoop_14').style.zIndex = 414;
+        map.getPane('pane_OLTWhitnallParkLoop_14').style['mix-blend-mode'] = 'normal';
+        var layer_OLTWhitnallParkLoop_14 = new L.geoJson(json_OLTWhitnallParkLoop_14, {
             attribution: '',
-            pane: 'pane_OLTWhitnallParkLoop_18',
-            onEachFeature: pop_OLTWhitnallParkLoop_18,
-            style: style_OLTWhitnallParkLoop_18_0,
+            pane: 'pane_OLTWhitnallParkLoop_14',
+            onEachFeature: pop_OLTWhitnallParkLoop_14,
+            style: style_OLTWhitnallParkLoop_14_0,
         });
-        bounds_group.addLayer(layer_OLTWhitnallParkLoop_18);
-        map.addLayer(layer_OLTWhitnallParkLoop_18);
-        function pop_OLTMenomoneeLine_19(feature, layer) {
+        bounds_group.addLayer(layer_OLTWhitnallParkLoop_14);
+        map.addLayer(layer_OLTWhitnallParkLoop_14);
+        function pop_OLTMenomoneeLine_15(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -916,9 +716,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTMenomoneeLine_19_0() {
+        function style_OLTMenomoneeLine_15_0() {
             return {
-                pane: 'pane_OLTMenomoneeLine_19',
+                pane: 'pane_OLTMenomoneeLine_15',
                 opacity: 1,
                 color: 'rgba(224,66,154,1.0)',
                 dashArray: '',
@@ -928,18 +728,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTMenomoneeLine_19');
-        map.getPane('pane_OLTMenomoneeLine_19').style.zIndex = 419;
-        map.getPane('pane_OLTMenomoneeLine_19').style['mix-blend-mode'] = 'normal';
-        var layer_OLTMenomoneeLine_19 = new L.geoJson(json_OLTMenomoneeLine_19, {
+        map.createPane('pane_OLTMenomoneeLine_15');
+        map.getPane('pane_OLTMenomoneeLine_15').style.zIndex = 415;
+        map.getPane('pane_OLTMenomoneeLine_15').style['mix-blend-mode'] = 'normal';
+        var layer_OLTMenomoneeLine_15 = new L.geoJson(json_OLTMenomoneeLine_15, {
             attribution: '',
-            pane: 'pane_OLTMenomoneeLine_19',
-            onEachFeature: pop_OLTMenomoneeLine_19,
-            style: style_OLTMenomoneeLine_19_0,
+            pane: 'pane_OLTMenomoneeLine_15',
+            onEachFeature: pop_OLTMenomoneeLine_15,
+            style: style_OLTMenomoneeLine_15_0,
         });
-        bounds_group.addLayer(layer_OLTMenomoneeLine_19);
-        map.addLayer(layer_OLTMenomoneeLine_19);
-        function pop_OLTBradleyConnector_20(feature, layer) {
+        bounds_group.addLayer(layer_OLTMenomoneeLine_15);
+        map.addLayer(layer_OLTMenomoneeLine_15);
+        function pop_OLTBradleyConnector_16(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -961,9 +761,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OLTBradleyConnector_20_0() {
+        function style_OLTBradleyConnector_16_0() {
             return {
-                pane: 'pane_OLTBradleyConnector_20',
+                pane: 'pane_OLTBradleyConnector_16',
                 opacity: 1,
                 color: 'rgba(124,61,35,1.0)',
                 dashArray: '',
@@ -973,18 +773,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OLTBradleyConnector_20');
-        map.getPane('pane_OLTBradleyConnector_20').style.zIndex = 420;
-        map.getPane('pane_OLTBradleyConnector_20').style['mix-blend-mode'] = 'normal';
-        var layer_OLTBradleyConnector_20 = new L.geoJson(json_OLTBradleyConnector_20, {
+        map.createPane('pane_OLTBradleyConnector_16');
+        map.getPane('pane_OLTBradleyConnector_16').style.zIndex = 416;
+        map.getPane('pane_OLTBradleyConnector_16').style['mix-blend-mode'] = 'normal';
+        var layer_OLTBradleyConnector_16 = new L.geoJson(json_OLTBradleyConnector_16, {
             attribution: '',
-            pane: 'pane_OLTBradleyConnector_20',
-            onEachFeature: pop_OLTBradleyConnector_20,
-            style: style_OLTBradleyConnector_20_0,
+            pane: 'pane_OLTBradleyConnector_16',
+            onEachFeature: pop_OLTBradleyConnector_16,
+            style: style_OLTBradleyConnector_16_0,
         });
-        bounds_group.addLayer(layer_OLTBradleyConnector_20);
-        map.addLayer(layer_OLTBradleyConnector_20);
-        function pop_KinnickinnicRiverTrail_21(feature, layer) {
+        bounds_group.addLayer(layer_OLTBradleyConnector_16);
+        map.addLayer(layer_OLTBradleyConnector_16);
+        function pop_KinnickinnicRiverTrail_17(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1002,9 +802,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_KinnickinnicRiverTrail_21_0() {
+        function style_KinnickinnicRiverTrail_17_0() {
             return {
-                pane: 'pane_KinnickinnicRiverTrail_21',
+                pane: 'pane_KinnickinnicRiverTrail_17',
                 opacity: 1,
                 color: 'rgba(255,230,5,1.0)',
                 dashArray: '',
@@ -1014,18 +814,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_KinnickinnicRiverTrail_21');
-        map.getPane('pane_KinnickinnicRiverTrail_21').style.zIndex = 421;
-        map.getPane('pane_KinnickinnicRiverTrail_21').style['mix-blend-mode'] = 'normal';
-        var layer_KinnickinnicRiverTrail_21 = new L.geoJson(json_KinnickinnicRiverTrail_21, {
+        map.createPane('pane_KinnickinnicRiverTrail_17');
+        map.getPane('pane_KinnickinnicRiverTrail_17').style.zIndex = 417;
+        map.getPane('pane_KinnickinnicRiverTrail_17').style['mix-blend-mode'] = 'normal';
+        var layer_KinnickinnicRiverTrail_17 = new L.geoJson(json_KinnickinnicRiverTrail_17, {
             attribution: '',
-            pane: 'pane_KinnickinnicRiverTrail_21',
-            onEachFeature: pop_KinnickinnicRiverTrail_21,
-            style: style_KinnickinnicRiverTrail_21_0,
+            pane: 'pane_KinnickinnicRiverTrail_17',
+            onEachFeature: pop_KinnickinnicRiverTrail_17,
+            style: style_KinnickinnicRiverTrail_17_0,
         });
-        bounds_group.addLayer(layer_KinnickinnicRiverTrail_21);
-        map.addLayer(layer_KinnickinnicRiverTrail_21);
-        function pop_HankAaronStateTrail_22(feature, layer) {
+        bounds_group.addLayer(layer_KinnickinnicRiverTrail_17);
+        map.addLayer(layer_KinnickinnicRiverTrail_17);
+        function pop_HankAaronStateTrail_18(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1043,9 +843,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_HankAaronStateTrail_22_0() {
+        function style_HankAaronStateTrail_18_0() {
             return {
-                pane: 'pane_HankAaronStateTrail_22',
+                pane: 'pane_HankAaronStateTrail_18',
                 opacity: 1,
                 color: 'rgba(255,98,1,1.0)',
                 dashArray: '',
@@ -1055,18 +855,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_HankAaronStateTrail_22');
-        map.getPane('pane_HankAaronStateTrail_22').style.zIndex = 422;
-        map.getPane('pane_HankAaronStateTrail_22').style['mix-blend-mode'] = 'normal';
-        var layer_HankAaronStateTrail_22 = new L.geoJson(json_HankAaronStateTrail_22, {
+        map.createPane('pane_HankAaronStateTrail_18');
+        map.getPane('pane_HankAaronStateTrail_18').style.zIndex = 418;
+        map.getPane('pane_HankAaronStateTrail_18').style['mix-blend-mode'] = 'normal';
+        var layer_HankAaronStateTrail_18 = new L.geoJson(json_HankAaronStateTrail_18, {
             attribution: '',
-            pane: 'pane_HankAaronStateTrail_22',
-            onEachFeature: pop_HankAaronStateTrail_22,
-            style: style_HankAaronStateTrail_22_0,
+            pane: 'pane_HankAaronStateTrail_18',
+            onEachFeature: pop_HankAaronStateTrail_18,
+            style: style_HankAaronStateTrail_18_0,
         });
-        bounds_group.addLayer(layer_HankAaronStateTrail_22);
-        map.addLayer(layer_HankAaronStateTrail_22);
-        function pop_20thStPowerline_23(feature, layer) {
+        bounds_group.addLayer(layer_HankAaronStateTrail_18);
+        map.addLayer(layer_HankAaronStateTrail_18);
+        function pop_20thStPowerline_19(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1084,9 +884,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_20thStPowerline_23_0() {
+        function style_20thStPowerline_19_0() {
             return {
-                pane: 'pane_20thStPowerline_23',
+                pane: 'pane_20thStPowerline_19',
                 opacity: 1,
                 color: 'rgba(237,65,76,1.0)',
                 dashArray: '',
@@ -1096,18 +896,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_20thStPowerline_23');
-        map.getPane('pane_20thStPowerline_23').style.zIndex = 423;
-        map.getPane('pane_20thStPowerline_23').style['mix-blend-mode'] = 'normal';
-        var layer_20thStPowerline_23 = new L.geoJson(json_20thStPowerline_23, {
+        map.createPane('pane_20thStPowerline_19');
+        map.getPane('pane_20thStPowerline_19').style.zIndex = 419;
+        map.getPane('pane_20thStPowerline_19').style['mix-blend-mode'] = 'normal';
+        var layer_20thStPowerline_19 = new L.geoJson(json_20thStPowerline_19, {
             attribution: '',
-            pane: 'pane_20thStPowerline_23',
-            onEachFeature: pop_20thStPowerline_23,
-            style: style_20thStPowerline_23_0,
+            pane: 'pane_20thStPowerline_19',
+            onEachFeature: pop_20thStPowerline_19,
+            style: style_20thStPowerline_19_0,
         });
-        bounds_group.addLayer(layer_20thStPowerline_23);
-        map.addLayer(layer_20thStPowerline_23);
-        function pop_NojoshingTrail_24(feature, layer) {
+        bounds_group.addLayer(layer_20thStPowerline_19);
+        map.addLayer(layer_20thStPowerline_19);
+        function pop_NojoshingTrail_20(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1125,9 +925,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_NojoshingTrail_24_0() {
+        function style_NojoshingTrail_20_0() {
             return {
-                pane: 'pane_NojoshingTrail_24',
+                pane: 'pane_NojoshingTrail_20',
                 opacity: 1,
                 color: 'rgba(171,125,80,1.0)',
                 dashArray: '',
@@ -1137,18 +937,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_NojoshingTrail_24');
-        map.getPane('pane_NojoshingTrail_24').style.zIndex = 424;
-        map.getPane('pane_NojoshingTrail_24').style['mix-blend-mode'] = 'normal';
-        var layer_NojoshingTrail_24 = new L.geoJson(json_NojoshingTrail_24, {
+        map.createPane('pane_NojoshingTrail_20');
+        map.getPane('pane_NojoshingTrail_20').style.zIndex = 420;
+        map.getPane('pane_NojoshingTrail_20').style['mix-blend-mode'] = 'normal';
+        var layer_NojoshingTrail_20 = new L.geoJson(json_NojoshingTrail_20, {
             attribution: '',
-            pane: 'pane_NojoshingTrail_24',
-            onEachFeature: pop_NojoshingTrail_24,
-            style: style_NojoshingTrail_24_0,
+            pane: 'pane_NojoshingTrail_20',
+            onEachFeature: pop_NojoshingTrail_20,
+            style: style_NojoshingTrail_20_0,
         });
-        bounds_group.addLayer(layer_NojoshingTrail_24);
-        map.addLayer(layer_NojoshingTrail_24);
-        function pop_WestAllisCrossTownConnector_25(feature, layer) {
+        bounds_group.addLayer(layer_NojoshingTrail_20);
+        map.addLayer(layer_NojoshingTrail_20);
+        function pop_WestAllisCrossTownConnector_21(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1166,9 +966,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_WestAllisCrossTownConnector_25_0() {
+        function style_WestAllisCrossTownConnector_21_0() {
             return {
-                pane: 'pane_WestAllisCrossTownConnector_25',
+                pane: 'pane_WestAllisCrossTownConnector_21',
                 opacity: 1,
                 color: 'rgba(179,1,255,1.0)',
                 dashArray: '',
@@ -1178,18 +978,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_WestAllisCrossTownConnector_25');
-        map.getPane('pane_WestAllisCrossTownConnector_25').style.zIndex = 425;
-        map.getPane('pane_WestAllisCrossTownConnector_25').style['mix-blend-mode'] = 'normal';
-        var layer_WestAllisCrossTownConnector_25 = new L.geoJson(json_WestAllisCrossTownConnector_25, {
+        map.createPane('pane_WestAllisCrossTownConnector_21');
+        map.getPane('pane_WestAllisCrossTownConnector_21').style.zIndex = 421;
+        map.getPane('pane_WestAllisCrossTownConnector_21').style['mix-blend-mode'] = 'normal';
+        var layer_WestAllisCrossTownConnector_21 = new L.geoJson(json_WestAllisCrossTownConnector_21, {
             attribution: '',
-            pane: 'pane_WestAllisCrossTownConnector_25',
-            onEachFeature: pop_WestAllisCrossTownConnector_25,
-            style: style_WestAllisCrossTownConnector_25_0,
+            pane: 'pane_WestAllisCrossTownConnector_21',
+            onEachFeature: pop_WestAllisCrossTownConnector_21,
+            style: style_WestAllisCrossTownConnector_21_0,
         });
-        bounds_group.addLayer(layer_WestAllisCrossTownConnector_25);
-        map.addLayer(layer_WestAllisCrossTownConnector_25);
-        function pop_NewBerlinTrail_26(feature, layer) {
+        bounds_group.addLayer(layer_WestAllisCrossTownConnector_21);
+        map.addLayer(layer_WestAllisCrossTownConnector_21);
+        function pop_NewBerlinTrail_22(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1207,9 +1007,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_NewBerlinTrail_26_0() {
+        function style_NewBerlinTrail_22_0() {
             return {
-                pane: 'pane_NewBerlinTrail_26',
+                pane: 'pane_NewBerlinTrail_22',
                 opacity: 1,
                 color: 'rgba(190,207,80,1.0)',
                 dashArray: '',
@@ -1219,18 +1019,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_NewBerlinTrail_26');
-        map.getPane('pane_NewBerlinTrail_26').style.zIndex = 426;
-        map.getPane('pane_NewBerlinTrail_26').style['mix-blend-mode'] = 'normal';
-        var layer_NewBerlinTrail_26 = new L.geoJson(json_NewBerlinTrail_26, {
+        map.createPane('pane_NewBerlinTrail_22');
+        map.getPane('pane_NewBerlinTrail_22').style.zIndex = 422;
+        map.getPane('pane_NewBerlinTrail_22').style['mix-blend-mode'] = 'normal';
+        var layer_NewBerlinTrail_22 = new L.geoJson(json_NewBerlinTrail_22, {
             attribution: '',
-            pane: 'pane_NewBerlinTrail_26',
-            onEachFeature: pop_NewBerlinTrail_26,
-            style: style_NewBerlinTrail_26_0,
+            pane: 'pane_NewBerlinTrail_22',
+            onEachFeature: pop_NewBerlinTrail_22,
+            style: style_NewBerlinTrail_22_0,
         });
-        bounds_group.addLayer(layer_NewBerlinTrail_26);
-        map.addLayer(layer_NewBerlinTrail_26);
-        function pop_BrookfieldGreenway_27(feature, layer) {
+        bounds_group.addLayer(layer_NewBerlinTrail_22);
+        map.addLayer(layer_NewBerlinTrail_22);
+        function pop_BrookfieldGreenway_23(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1252,9 +1052,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_BrookfieldGreenway_27_0() {
+        function style_BrookfieldGreenway_23_0() {
             return {
-                pane: 'pane_BrookfieldGreenway_27',
+                pane: 'pane_BrookfieldGreenway_23',
                 opacity: 1,
                 color: 'rgba(225,89,137,1.0)',
                 dashArray: '',
@@ -1264,18 +1064,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_BrookfieldGreenway_27');
-        map.getPane('pane_BrookfieldGreenway_27').style.zIndex = 427;
-        map.getPane('pane_BrookfieldGreenway_27').style['mix-blend-mode'] = 'normal';
-        var layer_BrookfieldGreenway_27 = new L.geoJson(json_BrookfieldGreenway_27, {
+        map.createPane('pane_BrookfieldGreenway_23');
+        map.getPane('pane_BrookfieldGreenway_23').style.zIndex = 423;
+        map.getPane('pane_BrookfieldGreenway_23').style['mix-blend-mode'] = 'normal';
+        var layer_BrookfieldGreenway_23 = new L.geoJson(json_BrookfieldGreenway_23, {
             attribution: '',
-            pane: 'pane_BrookfieldGreenway_27',
-            onEachFeature: pop_BrookfieldGreenway_27,
-            style: style_BrookfieldGreenway_27_0,
+            pane: 'pane_BrookfieldGreenway_23',
+            onEachFeature: pop_BrookfieldGreenway_23,
+            style: style_BrookfieldGreenway_23_0,
         });
-        bounds_group.addLayer(layer_BrookfieldGreenway_27);
-        map.addLayer(layer_BrookfieldGreenway_27);
-        function pop_WEEnergiesTrail_28(feature, layer) {
+        bounds_group.addLayer(layer_BrookfieldGreenway_23);
+        map.addLayer(layer_BrookfieldGreenway_23);
+        function pop_WEEnergiesTrail_24(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1293,9 +1093,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_WEEnergiesTrail_28_0() {
+        function style_WEEnergiesTrail_24_0() {
             return {
-                pane: 'pane_WEEnergiesTrail_28',
+                pane: 'pane_WEEnergiesTrail_24',
                 opacity: 1,
                 color: 'rgba(145,82,45,1.0)',
                 dashArray: '',
@@ -1305,18 +1105,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_WEEnergiesTrail_28');
-        map.getPane('pane_WEEnergiesTrail_28').style.zIndex = 428;
-        map.getPane('pane_WEEnergiesTrail_28').style['mix-blend-mode'] = 'normal';
-        var layer_WEEnergiesTrail_28 = new L.geoJson(json_WEEnergiesTrail_28, {
+        map.createPane('pane_WEEnergiesTrail_24');
+        map.getPane('pane_WEEnergiesTrail_24').style.zIndex = 424;
+        map.getPane('pane_WEEnergiesTrail_24').style['mix-blend-mode'] = 'normal';
+        var layer_WEEnergiesTrail_24 = new L.geoJson(json_WEEnergiesTrail_24, {
             attribution: '',
-            pane: 'pane_WEEnergiesTrail_28',
-            onEachFeature: pop_WEEnergiesTrail_28,
-            style: style_WEEnergiesTrail_28_0,
+            pane: 'pane_WEEnergiesTrail_24',
+            onEachFeature: pop_WEEnergiesTrail_24,
+            style: style_WEEnergiesTrail_24_0,
         });
-        bounds_group.addLayer(layer_WEEnergiesTrail_28);
-        map.addLayer(layer_WEEnergiesTrail_28);
-        function pop_FranklinHikeBikeTrail_29(feature, layer) {
+        bounds_group.addLayer(layer_WEEnergiesTrail_24);
+        map.addLayer(layer_WEEnergiesTrail_24);
+        function pop_FranklinHikeBikeTrail_25(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1334,9 +1134,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_FranklinHikeBikeTrail_29_0() {
+        function style_FranklinHikeBikeTrail_25_0() {
             return {
-                pane: 'pane_FranklinHikeBikeTrail_29',
+                pane: 'pane_FranklinHikeBikeTrail_25',
                 opacity: 1,
                 color: 'rgba(196,60,57,1.0)',
                 dashArray: '',
@@ -1346,18 +1146,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_FranklinHikeBikeTrail_29');
-        map.getPane('pane_FranklinHikeBikeTrail_29').style.zIndex = 429;
-        map.getPane('pane_FranklinHikeBikeTrail_29').style['mix-blend-mode'] = 'normal';
-        var layer_FranklinHikeBikeTrail_29 = new L.geoJson(json_FranklinHikeBikeTrail_29, {
+        map.createPane('pane_FranklinHikeBikeTrail_25');
+        map.getPane('pane_FranklinHikeBikeTrail_25').style.zIndex = 425;
+        map.getPane('pane_FranklinHikeBikeTrail_25').style['mix-blend-mode'] = 'normal';
+        var layer_FranklinHikeBikeTrail_25 = new L.geoJson(json_FranklinHikeBikeTrail_25, {
             attribution: '',
-            pane: 'pane_FranklinHikeBikeTrail_29',
-            onEachFeature: pop_FranklinHikeBikeTrail_29,
-            style: style_FranklinHikeBikeTrail_29_0,
+            pane: 'pane_FranklinHikeBikeTrail_25',
+            onEachFeature: pop_FranklinHikeBikeTrail_25,
+            style: style_FranklinHikeBikeTrail_25_0,
         });
-        bounds_group.addLayer(layer_FranklinHikeBikeTrail_29);
-        map.addLayer(layer_FranklinHikeBikeTrail_29);
-        function pop_MuskegoRecreationTrail_30(feature, layer) {
+        bounds_group.addLayer(layer_FranklinHikeBikeTrail_25);
+        map.addLayer(layer_FranklinHikeBikeTrail_25);
+        function pop_MuskegoRecreationTrail_26(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1375,9 +1175,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_MuskegoRecreationTrail_30_0() {
+        function style_MuskegoRecreationTrail_26_0() {
             return {
-                pane: 'pane_MuskegoRecreationTrail_30',
+                pane: 'pane_MuskegoRecreationTrail_26',
                 opacity: 1,
                 color: 'rgba(190,178,151,1.0)',
                 dashArray: '',
@@ -1387,18 +1187,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_MuskegoRecreationTrail_30');
-        map.getPane('pane_MuskegoRecreationTrail_30').style.zIndex = 430;
-        map.getPane('pane_MuskegoRecreationTrail_30').style['mix-blend-mode'] = 'normal';
-        var layer_MuskegoRecreationTrail_30 = new L.geoJson(json_MuskegoRecreationTrail_30, {
+        map.createPane('pane_MuskegoRecreationTrail_26');
+        map.getPane('pane_MuskegoRecreationTrail_26').style.zIndex = 426;
+        map.getPane('pane_MuskegoRecreationTrail_26').style['mix-blend-mode'] = 'normal';
+        var layer_MuskegoRecreationTrail_26 = new L.geoJson(json_MuskegoRecreationTrail_26, {
             attribution: '',
-            pane: 'pane_MuskegoRecreationTrail_30',
-            onEachFeature: pop_MuskegoRecreationTrail_30,
-            style: style_MuskegoRecreationTrail_30_0,
+            pane: 'pane_MuskegoRecreationTrail_26',
+            onEachFeature: pop_MuskegoRecreationTrail_26,
+            style: style_MuskegoRecreationTrail_26_0,
         });
-        bounds_group.addLayer(layer_MuskegoRecreationTrail_30);
-        map.addLayer(layer_MuskegoRecreationTrail_30);
-        function pop_OzaukeeInterurbanTrail_31(feature, layer) {
+        bounds_group.addLayer(layer_MuskegoRecreationTrail_26);
+        map.addLayer(layer_MuskegoRecreationTrail_26);
+        function pop_OzaukeeInterurbanTrail_27(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1416,9 +1216,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_OzaukeeInterurbanTrail_31_0() {
+        function style_OzaukeeInterurbanTrail_27_0() {
             return {
-                pane: 'pane_OzaukeeInterurbanTrail_31',
+                pane: 'pane_OzaukeeInterurbanTrail_27',
                 opacity: 1,
                 color: 'rgba(124,1,255,1.0)',
                 dashArray: '',
@@ -1428,18 +1228,18 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_OzaukeeInterurbanTrail_31');
-        map.getPane('pane_OzaukeeInterurbanTrail_31').style.zIndex = 431;
-        map.getPane('pane_OzaukeeInterurbanTrail_31').style['mix-blend-mode'] = 'normal';
-        var layer_OzaukeeInterurbanTrail_31 = new L.geoJson(json_OzaukeeInterurbanTrail_31, {
+        map.createPane('pane_OzaukeeInterurbanTrail_27');
+        map.getPane('pane_OzaukeeInterurbanTrail_27').style.zIndex = 427;
+        map.getPane('pane_OzaukeeInterurbanTrail_27').style['mix-blend-mode'] = 'normal';
+        var layer_OzaukeeInterurbanTrail_27 = new L.geoJson(json_OzaukeeInterurbanTrail_27, {
             attribution: '',
-            pane: 'pane_OzaukeeInterurbanTrail_31',
-            onEachFeature: pop_OzaukeeInterurbanTrail_31,
-            style: style_OzaukeeInterurbanTrail_31_0,
+            pane: 'pane_OzaukeeInterurbanTrail_27',
+            onEachFeature: pop_OzaukeeInterurbanTrail_27,
+            style: style_OzaukeeInterurbanTrail_27_0,
         });
-        bounds_group.addLayer(layer_OzaukeeInterurbanTrail_31);
-        map.addLayer(layer_OzaukeeInterurbanTrail_31);
-        function pop_PowerlineTrail_32(feature, layer) {
+        bounds_group.addLayer(layer_OzaukeeInterurbanTrail_27);
+        map.addLayer(layer_OzaukeeInterurbanTrail_27);
+        function pop_PowerlineTrail_28(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1457,9 +1257,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_PowerlineTrail_32_0() {
+        function style_PowerlineTrail_28_0() {
             return {
-                pane: 'pane_PowerlineTrail_32',
+                pane: 'pane_PowerlineTrail_28',
                 opacity: 1,
                 color: 'rgba(175,226,254,1.0)',
                 dashArray: '',
@@ -1469,17 +1269,17 @@
                 fillOpacity: 0,
             }
         }
-        map.createPane('pane_PowerlineTrail_32');
-        map.getPane('pane_PowerlineTrail_32').style.zIndex = 432;
-        map.getPane('pane_PowerlineTrail_32').style['mix-blend-mode'] = 'normal';
-        var layer_PowerlineTrail_32 = new L.geoJson(json_PowerlineTrail_32, {
+        map.createPane('pane_PowerlineTrail_28');
+        map.getPane('pane_PowerlineTrail_28').style.zIndex = 428;
+        map.getPane('pane_PowerlineTrail_28').style['mix-blend-mode'] = 'normal';
+        var layer_PowerlineTrail_28 = new L.geoJson(json_PowerlineTrail_28, {
             attribution: '',
-            pane: 'pane_PowerlineTrail_32',
-            onEachFeature: pop_PowerlineTrail_32,
-            style: style_PowerlineTrail_32_0,
+            pane: 'pane_PowerlineTrail_28',
+            onEachFeature: pop_PowerlineTrail_28,
+            style: style_PowerlineTrail_28_0,
         });
-        bounds_group.addLayer(layer_PowerlineTrail_32);
-        map.addLayer(layer_PowerlineTrail_32);
+        bounds_group.addLayer(layer_PowerlineTrail_28);
+        map.addLayer(layer_PowerlineTrail_28);
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
             position: 'topleft',
@@ -1491,7 +1291,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/PowerlineTrail_32.png" /> Powerline Trail': layer_PowerlineTrail_32,'<img src="legend/OzaukeeInterurbanTrail_31.png" /> Ozaukee Interurban Trail': layer_OzaukeeInterurbanTrail_31,'<img src="legend/MuskegoRecreationTrail_30.png" /> Muskego Recreation Trail': layer_MuskegoRecreationTrail_30,'<img src="legend/FranklinHikeBikeTrail_29.png" /> Franklin Hike-Bike Trail': layer_FranklinHikeBikeTrail_29,'<img src="legend/WEEnergiesTrail_28.png" /> WE Energies Trail': layer_WEEnergiesTrail_28,'<img src="legend/BrookfieldGreenway_27.png" /> Brookfield Greenway': layer_BrookfieldGreenway_27,'<img src="legend/NewBerlinTrail_26.png" /> New Berlin Trail': layer_NewBerlinTrail_26,'<img src="legend/WestAllisCrossTownConnector_25.png" /> West Allis Cross Town Connector': layer_WestAllisCrossTownConnector_25,'<img src="legend/NojoshingTrail_24.png" /> Nojoshing Trail': layer_NojoshingTrail_24,'<img src="legend/20thStPowerline_23.png" /> 20th St Powerline': layer_20thStPowerline_23,'<img src="legend/HankAaronStateTrail_22.png" /> Hank Aaron State Trail': layer_HankAaronStateTrail_22,'<img src="legend/KinnickinnicRiverTrail_21.png" /> Kinnickinnic River Trail': layer_KinnickinnicRiverTrail_21,'<img src="legend/OLTBradleyConnector_20.png" /> OLT Bradley Connector': layer_OLTBradleyConnector_20,'<img src="legend/OLTMenomoneeLine_19.png" /> OLT Menomonee Line': layer_OLTMenomoneeLine_19,'<img src="legend/OLTWhitnallParkLoop_18.png" /> OLT Whitnall Park Loop': layer_OLTWhitnallParkLoop_18,'<img src="legend/OLTRootRiverLine_17.png" /> OLT Root River Line': layer_OLTRootRiverLine_17,'<img src="legend/OLTDrexelConnector_16.png" /> OLT Drexel Connector': layer_OLTDrexelConnector_16,'<img src="legend/OLTOakCreekLine_15.png" /> OLT Oak Creek Line': layer_OLTOakCreekLine_15,'<img src="legend/OLTSouthShoreLine_14.png" /> OLT South Shore Line': layer_OLTSouthShoreLine_14,'<img src="legend/OLTBeerlineExtension_13.png" /> OLT Beerline Extension': layer_OLTBeerlineExtension_13,'<img src="legend/OLTKinnickinnicLine_12.png" /> OLT Kinnickinnic Line': layer_OLTKinnickinnicLine_12,'<img src="legend/OLTBeerlineB_11.png" /> OLT Beerline B': layer_OLTBeerlineB_11,'<img src="legend/OLTLakeParkLoop_10.png" /> OLT Lake Park Loop': layer_OLTLakeParkLoop_10,'<img src="legend/OLTZipLine_9.png" /> OLT Zip Line': layer_OLTZipLine_9,'<img src="legend/OLTMilwaukeeRiverLine_8.png" /> OLT Milwaukee River Line': layer_OLTMilwaukeeRiverLine_8,'<img src="legend/Northsideshared_7.png" /> Northside shared': layer_Northsideshared_7,'<img src="legend/Northsidelanes_6.png" /> Northside lanes': layer_Northsidelanes_6,'<img src="legend/Eastsideshared_5.png" /> Eastside shared': layer_Eastsideshared_5,'<img src="legend/Eastsidelanes_4.png" /> Eastside lanes': layer_Eastsidelanes_4,'<img src="legend/Southsideshared_3.png" /> Southside shared': layer_Southsideshared_3,'<img src="legend/Southsidelanes_2.png" /> Southside lanes': layer_Southsidelanes_2,"Google Maps": layer_GoogleMaps_1,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/PowerlineTrail_28.png" /> Powerline Trail': layer_PowerlineTrail_28,'<img src="legend/OzaukeeInterurbanTrail_27.png" /> Ozaukee Interurban Trail': layer_OzaukeeInterurbanTrail_27,'<img src="legend/MuskegoRecreationTrail_26.png" /> Muskego Recreation Trail': layer_MuskegoRecreationTrail_26,'<img src="legend/FranklinHikeBikeTrail_25.png" /> Franklin Hike-Bike Trail': layer_FranklinHikeBikeTrail_25,'<img src="legend/WEEnergiesTrail_24.png" /> WE Energies Trail': layer_WEEnergiesTrail_24,'<img src="legend/BrookfieldGreenway_23.png" /> Brookfield Greenway': layer_BrookfieldGreenway_23,'<img src="legend/NewBerlinTrail_22.png" /> New Berlin Trail': layer_NewBerlinTrail_22,'<img src="legend/WestAllisCrossTownConnector_21.png" /> West Allis Cross Town Connector': layer_WestAllisCrossTownConnector_21,'<img src="legend/NojoshingTrail_20.png" /> Nojoshing Trail': layer_NojoshingTrail_20,'<img src="legend/20thStPowerline_19.png" /> 20th St Powerline': layer_20thStPowerline_19,'<img src="legend/HankAaronStateTrail_18.png" /> Hank Aaron State Trail': layer_HankAaronStateTrail_18,'<img src="legend/KinnickinnicRiverTrail_17.png" /> Kinnickinnic River Trail': layer_KinnickinnicRiverTrail_17,'<img src="legend/OLTBradleyConnector_16.png" /> OLT Bradley Connector': layer_OLTBradleyConnector_16,'<img src="legend/OLTMenomoneeLine_15.png" /> OLT Menomonee Line': layer_OLTMenomoneeLine_15,'<img src="legend/OLTWhitnallParkLoop_14.png" /> OLT Whitnall Park Loop': layer_OLTWhitnallParkLoop_14,'<img src="legend/OLTRootRiverLine_13.png" /> OLT Root River Line': layer_OLTRootRiverLine_13,'<img src="legend/OLTDrexelConnector_12.png" /> OLT Drexel Connector': layer_OLTDrexelConnector_12,'<img src="legend/OLTOakCreekLine_11.png" /> OLT Oak Creek Line': layer_OLTOakCreekLine_11,'<img src="legend/OLTSouthShoreLine_10.png" /> OLT South Shore Line': layer_OLTSouthShoreLine_10,'<img src="legend/OLTBeerlineExtension_9.png" /> OLT Beerline Extension': layer_OLTBeerlineExtension_9,'<img src="legend/OLTKinnickinnicLine_8.png" /> OLT Kinnickinnic Line': layer_OLTKinnickinnicLine_8,'<img src="legend/OLTBeerlineB_7.png" /> OLT Beerline B': layer_OLTBeerlineB_7,'<img src="legend/OLTLakeParkLoop_6.png" /> OLT Lake Park Loop': layer_OLTLakeParkLoop_6,'<img src="legend/OLTZipLine_5.png" /> OLT Zip Line': layer_OLTZipLine_5,'<img src="legend/OLTMilwaukeeRiverLine_4.png" /> OLT Milwaukee River Line': layer_OLTMilwaukeeRiverLine_4,'<img src="legend/streetlanes_3.png" /> street lanes': layer_streetlanes_3,'<img src="legend/sharedlanes_2.png" /> shared lanes': layer_sharedlanes_2,"Google Maps": layer_GoogleMaps_1,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_0,}).addTo(map);
         setBounds();
         </script>
     </body>
