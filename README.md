@@ -3,7 +3,7 @@ Every* bike lane & trail in Milwaukee mapped
 
 *Nearly
 
-For your preseason consideration, almost every bike-friendly-ish surface in Milwaukee. Why did I do this? What can I say - the City's own maps haven't been updated in a decade (2011[!!](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8)), the [City's 2010 master bike plan PDF has NO maps in its Maps chapter(!)](https://city.milwaukee.gov/ImageLibrary/Groups/cityBikePed/MilwaukeebyBike2010-Plan.pdf), Google Maps' Bicycling layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, the fall weather turnt, hibernation, beer, all of Seinfeld is on Hulu... 
+Here's almost every bike-friendly-ish surface in Milwaukee. I've been working on this for awhile, struggling with how to introduce it. For anyone looking to exercise the cabin fever away with hopefully fewer cars, please ride safely, disinfect your doorknobs, and wash your hands! Would you believe the City's own maps haven't been updated in a decade (2011[!!](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8)), the [City's 2010 master bike plan PDF has NO maps in its Maps chapter(!)](https://city.milwaukee.gov/ImageLibrary/Groups/cityBikePed/MilwaukeebyBike2010-Plan.pdf), Google Maps' Bicycling layer has tons of errors and omissions in Milwaukee, Strava sucks for commuters, and you can still social distance on a bike? Also, all of Seinfeld is on Hulu.
 
 **tldr:** one bike map to rule them all, desktop and mobile friendly, and in the darkness bind all them other bad maps to Hell. 
 
@@ -33,9 +33,9 @@ If you're biking anywhere, prioritize the off-street trails, like the Oaf Leaf l
 
 The City's Most Likely to Get You Doored awards probably go to all of North Ave, N 16th and 17th near Marquette, Prospect & Farwell, all of Brady, and Erie St in the Third Ward. I don't know if the width from parked car mirrors to lane line is a full 1.5m, but I'm probably not going to be the one to measure them.
 
-**Other colors** are off-street, paved bike trails, except the [Oak Leaf Trail system](https://county.milwaukee.gov/County-Files/Parks-Department/Photo-Gallery/Explore/Trails/OLT-System-map-0619.pdf)'s so called *lines* ("Zip Line," "South Shore Line," etc.) are color-matched to the County Parks' map. But because we're so lucky to have so, so many off-street paved bike trails in Milwaukee County, I kind of ran out of colors to label them all. I welcome any feedback from those with visual impairments or map colorists so we can find some better colorways for these layers than ochre, puke, etc.
+**Other colors** are off-street, paved bike trails, except the [Oak Leaf Trail system](https://county.milwaukee.gov/County-Files/Parks-Department/Photo-Gallery/Explore/Trails/OLT-System-map-0619.pdf)'s so called *lines* ("Zip Line," "South Shore Line," etc.) are color-matched to the County Parks' map. But because we're so lucky to have so, so many off-street paved bike trails in Milwaukee County, I kind of ran out of colors to label them all. I welcome any feedback from those with visual impairments or map colorists so we can find some better colorways for these layers than hues like ochre, puke, etc.
 
-Fellow pedants of all kinds, I'm sure you'll let me know which streets are missing. ;)
+Fellow pedants of all kinds, I'm sure you'll let me know which streets are missing or wrong. ;)
 
 Call **Milwaukee's 311 equivalent 414-286-2489** to report cars in bike lanes, obstructions in bike lanes, etc.
 
@@ -44,7 +44,7 @@ National Bike to Work Week: Mon. May 11 - Sun. May 17
 National Bike to Work Day: Fri. May 15](https://bikeleague.org/bikemonth)  
 [Wisconsin Bike Week: Fri. May 29 - Sun. June 7](https://wisconsinbikefed.org/events/wisconsin-bike-week/)  
 
-[Know our laws and your rights](https://old.reddit.com/r/MiltownBiking/comments/f9gnh9/know_your_laws/)! Ride safely! *Be seen*!
+[Know our laws and know your rights](https://reddit.com/r/MiltownBiking/comments/f9gnh9/know_your_laws/)! Ride safely! *Be seen*!
 
 Hey mods, sidebar? ;)
 
