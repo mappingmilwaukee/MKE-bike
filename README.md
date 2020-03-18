@@ -71,3 +71,4 @@ Oh and check this shit out: all ~~roads~~ bike trails in ~~Rome~~ Milwaukee seem
 
 ------------------------------------------------------------------------------------------------------------------
 
+[![HitCount](http://hits.dwyl.com/mappingmilwaukee/mke-bike.svg)](http://hits.dwyl.com/mappingmilwaukee/mke-bike)
