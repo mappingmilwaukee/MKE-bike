@@ -67,7 +67,7 @@
             zoomControl:true, maxZoom:22, minZoom:10
         })
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
         var measureControl = new L.Control.Measure({
             position: 'topleft',
@@ -90,14 +90,20 @@
         var layer_GoogleSatelliteHybrid_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
-			maxZoom: 23,
+            minZoom: 10,
+            maxZoom: 22,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
         });
         layer_GoogleSatelliteHybrid_0;
         map.addLayer(layer_GoogleSatelliteHybrid_0);
         var layer_GoogleMaps_1 = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
             opacity: 1.0,
             attribution: '',
-			maxZoom: 23,
+            minZoom: 10,
+            maxZoom: 22,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
         });
         layer_GoogleMaps_1;
         map.addLayer(layer_GoogleMaps_1);
@@ -105,23 +111,23 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">street</th>\
-                        <td>' + (feature.properties['street'] !== null ? Autolinker.link(String(feature.properties['street'])) : '') + '</td>\
+                        <td>' + (feature.properties['street'] !== null ? Autolinker.link(feature.properties['street'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">direction</th>\
-                        <td>' + (feature.properties['direction'] !== null ? Autolinker.link(String(feature.properties['direction'])) : '') + '</td>\
+                        <td>' + (feature.properties['direction'] !== null ? Autolinker.link(feature.properties['direction'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">segment</th>\
-                        <td>' + (feature.properties['segment'] !== null ? Autolinker.link(String(feature.properties['segment'])) : '') + '</td>\
+                        <td>' + (feature.properties['segment'] !== null ? Autolinker.link(feature.properties['segment'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -137,6 +143,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_streetlanes_2');
@@ -144,6 +151,9 @@
         map.getPane('pane_streetlanes_2').style['mix-blend-mode'] = 'normal';
         var layer_streetlanes_2 = new L.geoJson(json_streetlanes_2, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_streetlanes_2',
+            layerName: 'layer_streetlanes_2',
             pane: 'pane_streetlanes_2',
             onEachFeature: pop_streetlanes_2,
             style: style_streetlanes_2_0,
@@ -154,23 +164,23 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">street</th>\
-                        <td>' + (feature.properties['street'] !== null ? Autolinker.link(String(feature.properties['street'])) : '') + '</td>\
+                        <td>' + (feature.properties['street'] !== null ? Autolinker.link(feature.properties['street'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">direction</th>\
-                        <td>' + (feature.properties['direction'] !== null ? Autolinker.link(String(feature.properties['direction'])) : '') + '</td>\
+                        <td>' + (feature.properties['direction'] !== null ? Autolinker.link(feature.properties['direction'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">segment</th>\
-                        <td>' + (feature.properties['segment'] !== null ? Autolinker.link(String(feature.properties['segment'])) : '') + '</td>\
+                        <td>' + (feature.properties['segment'] !== null ? Autolinker.link(feature.properties['segment'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -186,6 +196,7 @@
                 lineJoin: 'round',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_sharedlanes_3');
@@ -193,6 +204,9 @@
         map.getPane('pane_sharedlanes_3').style['mix-blend-mode'] = 'normal';
         var layer_sharedlanes_3 = new L.geoJson(json_sharedlanes_3, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_sharedlanes_3',
+            layerName: 'layer_sharedlanes_3',
             pane: 'pane_sharedlanes_3',
             onEachFeature: pop_sharedlanes_3,
             style: style_sharedlanes_3_0,
@@ -203,19 +217,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -231,6 +245,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTMKERiverLine_4');
@@ -238,6 +253,9 @@
         map.getPane('pane_OLTMKERiverLine_4').style['mix-blend-mode'] = 'normal';
         var layer_OLTMKERiverLine_4 = new L.geoJson(json_OLTMKERiverLine_4, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTMKERiverLine_4',
+            layerName: 'layer_OLTMKERiverLine_4',
             pane: 'pane_OLTMKERiverLine_4',
             onEachFeature: pop_OLTMKERiverLine_4,
             style: style_OLTMKERiverLine_4_0,
@@ -248,19 +266,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -276,6 +294,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTZipLine_5');
@@ -283,6 +302,9 @@
         map.getPane('pane_OLTZipLine_5').style['mix-blend-mode'] = 'normal';
         var layer_OLTZipLine_5 = new L.geoJson(json_OLTZipLine_5, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTZipLine_5',
+            layerName: 'layer_OLTZipLine_5',
             pane: 'pane_OLTZipLine_5',
             onEachFeature: pop_OLTZipLine_5,
             style: style_OLTZipLine_5_0,
@@ -293,19 +315,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -321,6 +343,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTLakeParkLoop_6');
@@ -328,6 +351,9 @@
         map.getPane('pane_OLTLakeParkLoop_6').style['mix-blend-mode'] = 'normal';
         var layer_OLTLakeParkLoop_6 = new L.geoJson(json_OLTLakeParkLoop_6, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTLakeParkLoop_6',
+            layerName: 'layer_OLTLakeParkLoop_6',
             pane: 'pane_OLTLakeParkLoop_6',
             onEachFeature: pop_OLTLakeParkLoop_6,
             style: style_OLTLakeParkLoop_6_0,
@@ -338,19 +364,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -366,6 +392,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTBeerlineB_7');
@@ -373,6 +400,9 @@
         map.getPane('pane_OLTBeerlineB_7').style['mix-blend-mode'] = 'normal';
         var layer_OLTBeerlineB_7 = new L.geoJson(json_OLTBeerlineB_7, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTBeerlineB_7',
+            layerName: 'layer_OLTBeerlineB_7',
             pane: 'pane_OLTBeerlineB_7',
             onEachFeature: pop_OLTBeerlineB_7,
             style: style_OLTBeerlineB_7_0,
@@ -383,19 +413,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -411,6 +441,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTBeerlineExtension_8');
@@ -418,6 +449,9 @@
         map.getPane('pane_OLTBeerlineExtension_8').style['mix-blend-mode'] = 'normal';
         var layer_OLTBeerlineExtension_8 = new L.geoJson(json_OLTBeerlineExtension_8, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTBeerlineExtension_8',
+            layerName: 'layer_OLTBeerlineExtension_8',
             pane: 'pane_OLTBeerlineExtension_8',
             onEachFeature: pop_OLTBeerlineExtension_8,
             style: style_OLTBeerlineExtension_8_0,
@@ -428,19 +462,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -456,6 +490,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTKinnickinnicLine_9');
@@ -463,6 +498,9 @@
         map.getPane('pane_OLTKinnickinnicLine_9').style['mix-blend-mode'] = 'normal';
         var layer_OLTKinnickinnicLine_9 = new L.geoJson(json_OLTKinnickinnicLine_9, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTKinnickinnicLine_9',
+            layerName: 'layer_OLTKinnickinnicLine_9',
             pane: 'pane_OLTKinnickinnicLine_9',
             onEachFeature: pop_OLTKinnickinnicLine_9,
             style: style_OLTKinnickinnicLine_9_0,
@@ -473,19 +511,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -501,6 +539,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTSouthShoreLine_10');
@@ -508,6 +547,9 @@
         map.getPane('pane_OLTSouthShoreLine_10').style['mix-blend-mode'] = 'normal';
         var layer_OLTSouthShoreLine_10 = new L.geoJson(json_OLTSouthShoreLine_10, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTSouthShoreLine_10',
+            layerName: 'layer_OLTSouthShoreLine_10',
             pane: 'pane_OLTSouthShoreLine_10',
             onEachFeature: pop_OLTSouthShoreLine_10,
             style: style_OLTSouthShoreLine_10_0,
@@ -518,19 +560,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -546,6 +588,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTOakCreekLine_11');
@@ -553,6 +596,9 @@
         map.getPane('pane_OLTOakCreekLine_11').style['mix-blend-mode'] = 'normal';
         var layer_OLTOakCreekLine_11 = new L.geoJson(json_OLTOakCreekLine_11, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTOakCreekLine_11',
+            layerName: 'layer_OLTOakCreekLine_11',
             pane: 'pane_OLTOakCreekLine_11',
             onEachFeature: pop_OLTOakCreekLine_11,
             style: style_OLTOakCreekLine_11_0,
@@ -563,19 +609,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -591,6 +637,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTDrexelConnector_12');
@@ -598,6 +645,9 @@
         map.getPane('pane_OLTDrexelConnector_12').style['mix-blend-mode'] = 'normal';
         var layer_OLTDrexelConnector_12 = new L.geoJson(json_OLTDrexelConnector_12, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTDrexelConnector_12',
+            layerName: 'layer_OLTDrexelConnector_12',
             pane: 'pane_OLTDrexelConnector_12',
             onEachFeature: pop_OLTDrexelConnector_12,
             style: style_OLTDrexelConnector_12_0,
@@ -608,19 +658,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -636,6 +686,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTRootRiverLine_13');
@@ -643,6 +694,9 @@
         map.getPane('pane_OLTRootRiverLine_13').style['mix-blend-mode'] = 'normal';
         var layer_OLTRootRiverLine_13 = new L.geoJson(json_OLTRootRiverLine_13, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTRootRiverLine_13',
+            layerName: 'layer_OLTRootRiverLine_13',
             pane: 'pane_OLTRootRiverLine_13',
             onEachFeature: pop_OLTRootRiverLine_13,
             style: style_OLTRootRiverLine_13_0,
@@ -653,19 +707,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -681,6 +735,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTWhitnallParkLoop_14');
@@ -688,6 +743,9 @@
         map.getPane('pane_OLTWhitnallParkLoop_14').style['mix-blend-mode'] = 'normal';
         var layer_OLTWhitnallParkLoop_14 = new L.geoJson(json_OLTWhitnallParkLoop_14, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTWhitnallParkLoop_14',
+            layerName: 'layer_OLTWhitnallParkLoop_14',
             pane: 'pane_OLTWhitnallParkLoop_14',
             onEachFeature: pop_OLTWhitnallParkLoop_14,
             style: style_OLTWhitnallParkLoop_14_0,
@@ -698,19 +756,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -726,6 +784,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTMenomoneeLine_15');
@@ -733,6 +792,9 @@
         map.getPane('pane_OLTMenomoneeLine_15').style['mix-blend-mode'] = 'normal';
         var layer_OLTMenomoneeLine_15 = new L.geoJson(json_OLTMenomoneeLine_15, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTMenomoneeLine_15',
+            layerName: 'layer_OLTMenomoneeLine_15',
             pane: 'pane_OLTMenomoneeLine_15',
             onEachFeature: pop_OLTMenomoneeLine_15,
             style: style_OLTMenomoneeLine_15_0,
@@ -743,19 +805,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -771,6 +833,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OLTBradleyConnector_16');
@@ -778,6 +841,9 @@
         map.getPane('pane_OLTBradleyConnector_16').style['mix-blend-mode'] = 'normal';
         var layer_OLTBradleyConnector_16 = new L.geoJson(json_OLTBradleyConnector_16, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OLTBradleyConnector_16',
+            layerName: 'layer_OLTBradleyConnector_16',
             pane: 'pane_OLTBradleyConnector_16',
             onEachFeature: pop_OLTBradleyConnector_16,
             style: style_OLTBradleyConnector_16_0,
@@ -788,15 +854,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -812,6 +878,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_KinnickinnicRiverTrail_17');
@@ -819,6 +886,9 @@
         map.getPane('pane_KinnickinnicRiverTrail_17').style['mix-blend-mode'] = 'normal';
         var layer_KinnickinnicRiverTrail_17 = new L.geoJson(json_KinnickinnicRiverTrail_17, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_KinnickinnicRiverTrail_17',
+            layerName: 'layer_KinnickinnicRiverTrail_17',
             pane: 'pane_KinnickinnicRiverTrail_17',
             onEachFeature: pop_KinnickinnicRiverTrail_17,
             style: style_KinnickinnicRiverTrail_17_0,
@@ -829,15 +899,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -853,6 +923,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_HankAaronStateTrail_18');
@@ -860,6 +931,9 @@
         map.getPane('pane_HankAaronStateTrail_18').style['mix-blend-mode'] = 'normal';
         var layer_HankAaronStateTrail_18 = new L.geoJson(json_HankAaronStateTrail_18, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_HankAaronStateTrail_18',
+            layerName: 'layer_HankAaronStateTrail_18',
             pane: 'pane_HankAaronStateTrail_18',
             onEachFeature: pop_HankAaronStateTrail_18,
             style: style_HankAaronStateTrail_18_0,
@@ -870,15 +944,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -894,6 +968,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_20thStPowerline_19');
@@ -901,6 +976,9 @@
         map.getPane('pane_20thStPowerline_19').style['mix-blend-mode'] = 'normal';
         var layer_20thStPowerline_19 = new L.geoJson(json_20thStPowerline_19, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_20thStPowerline_19',
+            layerName: 'layer_20thStPowerline_19',
             pane: 'pane_20thStPowerline_19',
             onEachFeature: pop_20thStPowerline_19,
             style: style_20thStPowerline_19_0,
@@ -911,15 +989,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -935,6 +1013,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_NojoshingTrail_20');
@@ -942,6 +1021,9 @@
         map.getPane('pane_NojoshingTrail_20').style['mix-blend-mode'] = 'normal';
         var layer_NojoshingTrail_20 = new L.geoJson(json_NojoshingTrail_20, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_NojoshingTrail_20',
+            layerName: 'layer_NojoshingTrail_20',
             pane: 'pane_NojoshingTrail_20',
             onEachFeature: pop_NojoshingTrail_20,
             style: style_NojoshingTrail_20_0,
@@ -952,15 +1034,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -976,6 +1058,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_StallisCrossTownConnector_21');
@@ -983,6 +1066,9 @@
         map.getPane('pane_StallisCrossTownConnector_21').style['mix-blend-mode'] = 'normal';
         var layer_StallisCrossTownConnector_21 = new L.geoJson(json_StallisCrossTownConnector_21, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_StallisCrossTownConnector_21',
+            layerName: 'layer_StallisCrossTownConnector_21',
             pane: 'pane_StallisCrossTownConnector_21',
             onEachFeature: pop_StallisCrossTownConnector_21,
             style: style_StallisCrossTownConnector_21_0,
@@ -993,15 +1079,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -1017,6 +1103,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_NewBerlinTrail_22');
@@ -1024,6 +1111,9 @@
         map.getPane('pane_NewBerlinTrail_22').style['mix-blend-mode'] = 'normal';
         var layer_NewBerlinTrail_22 = new L.geoJson(json_NewBerlinTrail_22, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_NewBerlinTrail_22',
+            layerName: 'layer_NewBerlinTrail_22',
             pane: 'pane_NewBerlinTrail_22',
             onEachFeature: pop_NewBerlinTrail_22,
             style: style_NewBerlinTrail_22_0,
@@ -1034,19 +1124,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">trail line</th>\
-                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(String(feature.properties['trail line'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail line'] !== null ? Autolinker.link(feature.properties['trail line'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -1062,6 +1152,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_BrookfieldGreenway_23');
@@ -1069,6 +1160,9 @@
         map.getPane('pane_BrookfieldGreenway_23').style['mix-blend-mode'] = 'normal';
         var layer_BrookfieldGreenway_23 = new L.geoJson(json_BrookfieldGreenway_23, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_BrookfieldGreenway_23',
+            layerName: 'layer_BrookfieldGreenway_23',
             pane: 'pane_BrookfieldGreenway_23',
             onEachFeature: pop_BrookfieldGreenway_23,
             style: style_BrookfieldGreenway_23_0,
@@ -1079,15 +1173,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -1103,6 +1197,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_WEEnergiesTrail_24');
@@ -1110,6 +1205,9 @@
         map.getPane('pane_WEEnergiesTrail_24').style['mix-blend-mode'] = 'normal';
         var layer_WEEnergiesTrail_24 = new L.geoJson(json_WEEnergiesTrail_24, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_WEEnergiesTrail_24',
+            layerName: 'layer_WEEnergiesTrail_24',
             pane: 'pane_WEEnergiesTrail_24',
             onEachFeature: pop_WEEnergiesTrail_24,
             style: style_WEEnergiesTrail_24_0,
@@ -1120,15 +1218,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -1144,6 +1242,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_FranklinHikeBikeTrail_25');
@@ -1151,6 +1250,9 @@
         map.getPane('pane_FranklinHikeBikeTrail_25').style['mix-blend-mode'] = 'normal';
         var layer_FranklinHikeBikeTrail_25 = new L.geoJson(json_FranklinHikeBikeTrail_25, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_FranklinHikeBikeTrail_25',
+            layerName: 'layer_FranklinHikeBikeTrail_25',
             pane: 'pane_FranklinHikeBikeTrail_25',
             onEachFeature: pop_FranklinHikeBikeTrail_25,
             style: style_FranklinHikeBikeTrail_25_0,
@@ -1161,15 +1263,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -1185,6 +1287,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_MuskegoRecreationTrail_26');
@@ -1192,6 +1295,9 @@
         map.getPane('pane_MuskegoRecreationTrail_26').style['mix-blend-mode'] = 'normal';
         var layer_MuskegoRecreationTrail_26 = new L.geoJson(json_MuskegoRecreationTrail_26, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_MuskegoRecreationTrail_26',
+            layerName: 'layer_MuskegoRecreationTrail_26',
             pane: 'pane_MuskegoRecreationTrail_26',
             onEachFeature: pop_MuskegoRecreationTrail_26,
             style: style_MuskegoRecreationTrail_26_0,
@@ -1202,15 +1308,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -1226,6 +1332,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_OzaukeeInterurbanTrail_27');
@@ -1233,6 +1340,9 @@
         map.getPane('pane_OzaukeeInterurbanTrail_27').style['mix-blend-mode'] = 'normal';
         var layer_OzaukeeInterurbanTrail_27 = new L.geoJson(json_OzaukeeInterurbanTrail_27, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_OzaukeeInterurbanTrail_27',
+            layerName: 'layer_OzaukeeInterurbanTrail_27',
             pane: 'pane_OzaukeeInterurbanTrail_27',
             onEachFeature: pop_OzaukeeInterurbanTrail_27,
             style: style_OzaukeeInterurbanTrail_27_0,
@@ -1243,15 +1353,15 @@
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(String(feature.properties['trail name'])) : '') + '</td>\
+                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(String(feature.properties['lane type'])) : '') + '</td>\
+                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(String(feature.properties['notes'])) : '') + '</td>\
+                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -1267,6 +1377,7 @@
                 lineJoin: 'bevel',
                 weight: 4.0,
                 fillOpacity: 0,
+                interactive: true,
             }
         }
         map.createPane('pane_PowerlineTrail_28');
@@ -1274,6 +1385,9 @@
         map.getPane('pane_PowerlineTrail_28').style['mix-blend-mode'] = 'normal';
         var layer_PowerlineTrail_28 = new L.geoJson(json_PowerlineTrail_28, {
             attribution: '',
+            interactive: true,
+            dataVar: 'json_PowerlineTrail_28',
+            layerName: 'layer_PowerlineTrail_28',
             pane: 'pane_PowerlineTrail_28',
             onEachFeature: pop_PowerlineTrail_28,
             style: style_PowerlineTrail_28_0,
