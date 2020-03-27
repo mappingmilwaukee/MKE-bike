@@ -59,9 +59,8 @@
         <script src="data/BrookfieldGreenway_23.js"></script>
         <script src="data/WEEnergiesTrail_24.js"></script>
         <script src="data/FranklinHikeBikeTrail_25.js"></script>
-        <script src="data/MuskegoRecreationTrail_26.js"></script>
-        <script src="data/OzaukeeInterurbanTrail_27.js"></script>
-        <script src="data/PowerlineTrail_28.js"></script>
+        <script src="data/OzaukeeInterurbanTrail_26.js"></script>
+        <script src="data/PowerlineTrail_27.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:22, minZoom:10
@@ -1259,7 +1258,7 @@
         });
         bounds_group.addLayer(layer_FranklinHikeBikeTrail_25);
         map.addLayer(layer_FranklinHikeBikeTrail_25);
-        function pop_MuskegoRecreationTrail_26(feature, layer) {
+        function pop_OzaukeeInterurbanTrail_26(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1277,54 +1276,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_MuskegoRecreationTrail_26_0() {
+        function style_OzaukeeInterurbanTrail_26_0() {
             return {
-                pane: 'pane_MuskegoRecreationTrail_26',
-                opacity: 1,
-                color: 'rgba(190,178,151,1.0)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 4.0,
-                fillOpacity: 0,
-                interactive: true,
-            }
-        }
-        map.createPane('pane_MuskegoRecreationTrail_26');
-        map.getPane('pane_MuskegoRecreationTrail_26').style.zIndex = 426;
-        map.getPane('pane_MuskegoRecreationTrail_26').style['mix-blend-mode'] = 'normal';
-        var layer_MuskegoRecreationTrail_26 = new L.geoJson(json_MuskegoRecreationTrail_26, {
-            attribution: '',
-            interactive: true,
-            dataVar: 'json_MuskegoRecreationTrail_26',
-            layerName: 'layer_MuskegoRecreationTrail_26',
-            pane: 'pane_MuskegoRecreationTrail_26',
-            onEachFeature: pop_MuskegoRecreationTrail_26,
-            style: style_MuskegoRecreationTrail_26_0,
-        });
-        bounds_group.addLayer(layer_MuskegoRecreationTrail_26);
-        map.addLayer(layer_MuskegoRecreationTrail_26);
-        function pop_OzaukeeInterurbanTrail_27(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <th scope="row">trail name</th>\
-                        <td>' + (feature.properties['trail name'] !== null ? Autolinker.link(feature.properties['trail name'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">lane type</th>\
-                        <td>' + (feature.properties['lane type'] !== null ? Autolinker.link(feature.properties['lane type'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <th scope="row">notes</th>\
-                        <td>' + (feature.properties['notes'] !== null ? Autolinker.link(feature.properties['notes'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_OzaukeeInterurbanTrail_27_0() {
-            return {
-                pane: 'pane_OzaukeeInterurbanTrail_27',
+                pane: 'pane_OzaukeeInterurbanTrail_26',
                 opacity: 1,
                 color: 'rgba(124,1,255,1.0)',
                 dashArray: '',
@@ -1335,21 +1289,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_OzaukeeInterurbanTrail_27');
-        map.getPane('pane_OzaukeeInterurbanTrail_27').style.zIndex = 427;
-        map.getPane('pane_OzaukeeInterurbanTrail_27').style['mix-blend-mode'] = 'normal';
-        var layer_OzaukeeInterurbanTrail_27 = new L.geoJson(json_OzaukeeInterurbanTrail_27, {
+        map.createPane('pane_OzaukeeInterurbanTrail_26');
+        map.getPane('pane_OzaukeeInterurbanTrail_26').style.zIndex = 426;
+        map.getPane('pane_OzaukeeInterurbanTrail_26').style['mix-blend-mode'] = 'normal';
+        var layer_OzaukeeInterurbanTrail_26 = new L.geoJson(json_OzaukeeInterurbanTrail_26, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_OzaukeeInterurbanTrail_27',
-            layerName: 'layer_OzaukeeInterurbanTrail_27',
-            pane: 'pane_OzaukeeInterurbanTrail_27',
-            onEachFeature: pop_OzaukeeInterurbanTrail_27,
-            style: style_OzaukeeInterurbanTrail_27_0,
+            dataVar: 'json_OzaukeeInterurbanTrail_26',
+            layerName: 'layer_OzaukeeInterurbanTrail_26',
+            pane: 'pane_OzaukeeInterurbanTrail_26',
+            onEachFeature: pop_OzaukeeInterurbanTrail_26,
+            style: style_OzaukeeInterurbanTrail_26_0,
         });
-        bounds_group.addLayer(layer_OzaukeeInterurbanTrail_27);
-        map.addLayer(layer_OzaukeeInterurbanTrail_27);
-        function pop_PowerlineTrail_28(feature, layer) {
+        bounds_group.addLayer(layer_OzaukeeInterurbanTrail_26);
+        map.addLayer(layer_OzaukeeInterurbanTrail_26);
+        function pop_PowerlineTrail_27(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">trail name</th>\
@@ -1367,9 +1321,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_PowerlineTrail_28_0() {
+        function style_PowerlineTrail_27_0() {
             return {
-                pane: 'pane_PowerlineTrail_28',
+                pane: 'pane_PowerlineTrail_27',
                 opacity: 1,
                 color: 'rgba(175,226,254,1.0)',
                 dashArray: '',
@@ -1380,20 +1334,20 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_PowerlineTrail_28');
-        map.getPane('pane_PowerlineTrail_28').style.zIndex = 428;
-        map.getPane('pane_PowerlineTrail_28').style['mix-blend-mode'] = 'normal';
-        var layer_PowerlineTrail_28 = new L.geoJson(json_PowerlineTrail_28, {
+        map.createPane('pane_PowerlineTrail_27');
+        map.getPane('pane_PowerlineTrail_27').style.zIndex = 427;
+        map.getPane('pane_PowerlineTrail_27').style['mix-blend-mode'] = 'normal';
+        var layer_PowerlineTrail_27 = new L.geoJson(json_PowerlineTrail_27, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_PowerlineTrail_28',
-            layerName: 'layer_PowerlineTrail_28',
-            pane: 'pane_PowerlineTrail_28',
-            onEachFeature: pop_PowerlineTrail_28,
-            style: style_PowerlineTrail_28_0,
+            dataVar: 'json_PowerlineTrail_27',
+            layerName: 'layer_PowerlineTrail_27',
+            pane: 'pane_PowerlineTrail_27',
+            onEachFeature: pop_PowerlineTrail_27,
+            style: style_PowerlineTrail_27_0,
         });
-        bounds_group.addLayer(layer_PowerlineTrail_28);
-        map.addLayer(layer_PowerlineTrail_28);
+        bounds_group.addLayer(layer_PowerlineTrail_27);
+        map.addLayer(layer_PowerlineTrail_27);
         var osmGeocoder = new L.Control.Geocoder({
             collapsed: true,
             position: 'topleft',
@@ -1405,7 +1359,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/PowerlineTrail_28.png" /> Powerline Trail': layer_PowerlineTrail_28,'<img src="legend/OzaukeeInterurbanTrail_27.png" /> Ozaukee Interurban Trail': layer_OzaukeeInterurbanTrail_27,'<img src="legend/MuskegoRecreationTrail_26.png" /> Muskego Recreation Trail': layer_MuskegoRecreationTrail_26,'<img src="legend/FranklinHikeBikeTrail_25.png" /> Franklin Hike-Bike Trail': layer_FranklinHikeBikeTrail_25,'<img src="legend/WEEnergiesTrail_24.png" /> WE Energies Trail': layer_WEEnergiesTrail_24,'<img src="legend/BrookfieldGreenway_23.png" /> Brookfield Greenway': layer_BrookfieldGreenway_23,'<img src="legend/NewBerlinTrail_22.png" /> New Berlin Trail': layer_NewBerlinTrail_22,'<img src="legend/StallisCrossTownConnector_21.png" /> Stallis Cross Town Connector': layer_StallisCrossTownConnector_21,'<img src="legend/NojoshingTrail_20.png" /> Nojoshing Trail': layer_NojoshingTrail_20,'<img src="legend/20thStPowerline_19.png" /> 20th St Powerline': layer_20thStPowerline_19,'<img src="legend/HankAaronStateTrail_18.png" /> Hank Aaron State Trail': layer_HankAaronStateTrail_18,'<img src="legend/KinnickinnicRiverTrail_17.png" /> Kinnickinnic River Trail': layer_KinnickinnicRiverTrail_17,'<img src="legend/OLTBradleyConnector_16.png" /> OLT Bradley Connector': layer_OLTBradleyConnector_16,'<img src="legend/OLTMenomoneeLine_15.png" /> OLT Menomonee Line': layer_OLTMenomoneeLine_15,'<img src="legend/OLTWhitnallParkLoop_14.png" /> OLT Whitnall Park Loop': layer_OLTWhitnallParkLoop_14,'<img src="legend/OLTRootRiverLine_13.png" /> OLT Root River Line': layer_OLTRootRiverLine_13,'<img src="legend/OLTDrexelConnector_12.png" /> OLT Drexel Connector': layer_OLTDrexelConnector_12,'<img src="legend/OLTOakCreekLine_11.png" /> OLT Oak Creek Line': layer_OLTOakCreekLine_11,'<img src="legend/OLTSouthShoreLine_10.png" /> OLT South Shore Line': layer_OLTSouthShoreLine_10,'<img src="legend/OLTKinnickinnicLine_9.png" /> OLT Kinnickinnic Line': layer_OLTKinnickinnicLine_9,'<img src="legend/OLTBeerlineExtension_8.png" /> OLT Beerline Extension': layer_OLTBeerlineExtension_8,'<img src="legend/OLTBeerlineB_7.png" /> OLT Beerline B': layer_OLTBeerlineB_7,'<img src="legend/OLTLakeParkLoop_6.png" /> OLT Lake Park Loop': layer_OLTLakeParkLoop_6,'<img src="legend/OLTZipLine_5.png" /> OLT Zip Line': layer_OLTZipLine_5,'<img src="legend/OLTMKERiverLine_4.png" /> OLT MKE River Line': layer_OLTMKERiverLine_4,'<img src="legend/sharedlanes_3.png" /> shared lanes': layer_sharedlanes_3,'<img src="legend/streetlanes_2.png" /> street lanes': layer_streetlanes_2,"Google Maps": layer_GoogleMaps_1,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/PowerlineTrail_27.png" /> Powerline Trail': layer_PowerlineTrail_27,'<img src="legend/OzaukeeInterurbanTrail_26.png" /> Ozaukee Interurban Trail': layer_OzaukeeInterurbanTrail_26,'<img src="legend/FranklinHikeBikeTrail_25.png" /> Franklin Hike-Bike Trail': layer_FranklinHikeBikeTrail_25,'<img src="legend/WEEnergiesTrail_24.png" /> WE Energies Trail': layer_WEEnergiesTrail_24,'<img src="legend/BrookfieldGreenway_23.png" /> Brookfield Greenway': layer_BrookfieldGreenway_23,'<img src="legend/NewBerlinTrail_22.png" /> New Berlin Trail': layer_NewBerlinTrail_22,'<img src="legend/StallisCrossTownConnector_21.png" /> Stallis Cross Town Connector': layer_StallisCrossTownConnector_21,'<img src="legend/NojoshingTrail_20.png" /> Nojoshing Trail': layer_NojoshingTrail_20,'<img src="legend/20thStPowerline_19.png" /> 20th St Powerline': layer_20thStPowerline_19,'<img src="legend/HankAaronStateTrail_18.png" /> Hank Aaron State Trail': layer_HankAaronStateTrail_18,'<img src="legend/KinnickinnicRiverTrail_17.png" /> Kinnickinnic River Trail': layer_KinnickinnicRiverTrail_17,'<img src="legend/OLTBradleyConnector_16.png" /> OLT Bradley Connector': layer_OLTBradleyConnector_16,'<img src="legend/OLTMenomoneeLine_15.png" /> OLT Menomonee Line': layer_OLTMenomoneeLine_15,'<img src="legend/OLTWhitnallParkLoop_14.png" /> OLT Whitnall Park Loop': layer_OLTWhitnallParkLoop_14,'<img src="legend/OLTRootRiverLine_13.png" /> OLT Root River Line': layer_OLTRootRiverLine_13,'<img src="legend/OLTDrexelConnector_12.png" /> OLT Drexel Connector': layer_OLTDrexelConnector_12,'<img src="legend/OLTOakCreekLine_11.png" /> OLT Oak Creek Line': layer_OLTOakCreekLine_11,'<img src="legend/OLTSouthShoreLine_10.png" /> OLT South Shore Line': layer_OLTSouthShoreLine_10,'<img src="legend/OLTKinnickinnicLine_9.png" /> OLT Kinnickinnic Line': layer_OLTKinnickinnicLine_9,'<img src="legend/OLTBeerlineExtension_8.png" /> OLT Beerline Extension': layer_OLTBeerlineExtension_8,'<img src="legend/OLTBeerlineB_7.png" /> OLT Beerline B': layer_OLTBeerlineB_7,'<img src="legend/OLTLakeParkLoop_6.png" /> OLT Lake Park Loop': layer_OLTLakeParkLoop_6,'<img src="legend/OLTZipLine_5.png" /> OLT Zip Line': layer_OLTZipLine_5,'<img src="legend/OLTMKERiverLine_4.png" /> OLT MKE River Line': layer_OLTMKERiverLine_4,'<img src="legend/sharedlanes_3.png" /> shared lanes': layer_sharedlanes_3,'<img src="legend/streetlanes_2.png" /> street lanes': layer_streetlanes_2,"Google Maps": layer_GoogleMaps_1,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_0,}).addTo(map);
         setBounds();
         </script>
     </body>
