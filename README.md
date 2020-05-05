@@ -1,7 +1,7 @@
-# MKE-bike
+**MKE-bike**
 Every bike lane & trail in Milwaukee mapped
 
-**About this map:**  
+#**About this map:**  
 Layers of lanes and trails are in the top right corner. Street segments are clickable for more details. This map maps all types of on-street bike lanes and paved off-street trails. Unlike most bike maps, this one does not include *bicycle routes*, which are only marked with small, vague signs in unnoticeable places, and on bad bike maps. *Bike routes* are usually connectors between lanes and/or trails, easily intuited or completely unintuitive. Plus, when bike maps *do* show bike routes, the maps can be crazy confusing - looking at you, [City of Milwaukee](https://city.milwaukee.gov/Milwaukee-by-Bike/maps.htm#.XjyFSjNKiM8). For that matter, bike maps can be absurdly complex, like [this angel hair pasta catastrophe from Brookfield](https://www.ci.brookfield.wi.us/DocumentCenter/View/1362/pedestrian_bike_path_map?bidId=). Anyway:
 
 **Solid green lines** are on-street paved bike lanes, including:  
