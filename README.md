@@ -10,14 +10,14 @@ Layers of lanes and trails are in the top right corner. Street segments are clic
 
 * buffered bike lanes (zebra stripes separating automotive vehicular traffic from dedicated bike lanes)  
 
-* protected (by a barrier, duh)
+* protected (by a barrier, duh, like bollards, concrete, or parked cars)
 
 * Milwaukee also has bidirectional [cycle tracks](https://nacto.org/publication/urban-bikeway-design-guide/cycle-tracks/raised-cycle-tracks/), raised and unraised, and Tosa has a bunch of [green bike boxes]
 (https://nacto.org/publication/urban-bikeway-design-guide/intersection-treatments/bike-boxes/)
 
 * Milwaukee also has a few raised dedicated lanes, like on Bay St in Bay View, but since they're dedicated lanes that are kind of buffered but also kind of protected, I haven't marked them specially
 
-If you're biking anywhere, prioritize the off-street trails, like the Oaf Leaf lines. If you're biking on streets, any street with solid green lines (on this map) are your best bets. Prioritize cycle tracks (like Mayfair between Bluemound & the Hank Aaron/I-94), over concrete divider-protected lanes, over buffered lanes, over dedicated lanes. Safety first.
+If you're biking anywhere, prioritize the off-street trails, like the Oaf Leaf Lines. If you're biking on streets, any street with solid green lines (on this map) are your best bets. Prioritize cycle tracks (like Mayfair between Bluemound & the Hank Aaron/I-94) and concrete divider (Jersey barrier)-protected lanes over buffered lanes, over dedicated lanes, over sharrows, over nothing. Safety first.
 
 **Fluorescent yellow-green lines** (will be dotted in the future) are used for shared bike lanes:
 
@@ -27,9 +27,9 @@ If you're biking anywhere, prioritize the off-street trails, like the Oaf Leaf l
 
 The City's Most Likely to Get You Doored awards probably go to all of North Ave, N 16th and 17th near Marquette, Prospect & Farwell, all of Brady, and Erie St in the Third Ward. 
 
-**Other colors** are off-street, paved bike trails, except the [Oak Leaf Trail system](https://county.milwaukee.gov/County-Files/Parks-Department/Photo-Gallery/Explore/Trails/OLT-System-map-0619.pdf)'s so called *lines* ("Zip Line," "South Shore Line," etc.) are color-matched to the County Parks' map. But because we're so lucky to have so, so many off-street paved bike trails in Milwaukee County, I kind of ran out of colors to label them all. I welcome any feedback from those with visual impairments or map colorists so we can find some better colorways for these layers than hues like ochre, puke, etc.
+**Other colors** are off-street, paved bike trails, except the [Oak Leaf Trail system](https://county.milwaukee.gov/County-Files/Parks-Department/Photo-Gallery/Explore/Trails/OLT-System-map-0619.pdf)'s so called *Lines* (e.g. "Zip Line," "South Shore Line," etc.) are color-matched to the County Parks' map. But because we're so lucky to have so, so many off-street paved bike trails in Milwaukee County, I kind of ran out of colors to label them all. I welcome any feedback from those with visual impairments or map colorists so we can find some better colorways for these layers than hues like ochre, puke, etc.
 
-Call **Milwaukee's 311 equivalent 414-286-2489** to report cars in bike lanes, obstructions in bike lanes, etc.
+Call **Milwaukee's 311 equivalent 414-286-2489** to report idiots' cars parked/stopped in bike lanes, obstructions in bike lanes, etc.
 
 [National Bike Month: May 1 - May 31  
 National Bike to Work Week: Mon. May 11 - Sun. May 17  
