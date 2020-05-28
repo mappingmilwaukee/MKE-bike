@@ -32,6 +32,6 @@ The City's Most Likely to Get You Doored awards probably go to all of North Ave,
 Call **Milwaukee's 311 equivalent 414-286-2489** to report idiots' cars parked/stopped in bike lanes, obstructions in bike lanes, etc.
 
 [AMENDED Wisconsin Bike Week: Sat. Sept. 12 - Sat. Sept. 19](https://sites.google.com/wisconsinbikefed.org/bikeweek/home)  
-[AMENDED National Bike to Work Week: Mon. Sept. 21 - Fri. Sept. 25
+[AMENDED National Bike to Work Week: Mon. Sept. 21 - Fri. Sept. 25  
 AMENDED National Bike to Work Day: Tues. Sept. 22](https://bikeleague.org/bikemonth)  
 [Know our laws and know your rights](https://reddit.com/r/MiltownBiking/comments/f9gnh9/know_your_laws/)! Ride safely! *Be seen*!
