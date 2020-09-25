@@ -37,27 +37,23 @@ Call **Milwaukee's 311 equivalent 414-286-2489** to report idiots' cars parked/s
 
 **Sources**:
 
-
-
-**Sources**:
-
-
+Exising infrastructure:
 https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/maps
 https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike
 https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/Bike-Facilities
 https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/City-of-Milwaukee-Bicycle-Milwaukee-Plan
 https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/Complete-Streets
 https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/Bike-Facilities/Trails/KK-River-Trail
-https://www.railstotrails.org/trailblog/2015/january/13/wisconsins-kinnickinnic-river-trail/
 https://www.hankaaronstatetrail.org/
 https://county.milwaukee.gov/EN/Parks/Explore/Trails/Oak-Leaf-Trail
 https://wi-westallis.civicplus.com/1262/Bike-Maps
 https://www.co.ozaukee.wi.us/553/Interurban-Trail
 https://www.racinecounty.com/home/showdocument?id=1323
 https://www.traillink.com/trail/city-of-franklin-hike-and-bike-trail/
-
 https://activestreets.mailchimpsites.com/
 
+Planned/proposed infrastructure:
+https://www.railstotrails.org/trailblog/2015/january/13/wisconsins-kinnickinnic-river-trail/
 https://www.powerlinetrail.org/
 https://urbanmilwaukee.com/2020/05/19/transportation-city-seeks-grants-for-new-bike-trails/
 https://urbanmilwaukee.com/2020/02/24/transportation-city-plans-4-pedestrian-bicycling-projects/
