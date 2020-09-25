@@ -38,6 +38,7 @@ Call **Milwaukee's 311 equivalent 414-286-2489** to report idiots' cars parked/s
 **Sources**:
 
 Exising infrastructure:
+
 https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/maps
 https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike
 https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/Bike-Facilities
@@ -53,6 +54,7 @@ https://www.traillink.com/trail/city-of-franklin-hike-and-bike-trail/
 https://activestreets.mailchimpsites.com/
 
 Planned/proposed infrastructure:
+
 https://www.railstotrails.org/trailblog/2015/january/13/wisconsins-kinnickinnic-river-trail/
 https://www.powerlinetrail.org/
 https://urbanmilwaukee.com/2020/05/19/transportation-city-seeks-grants-for-new-bike-trails/
