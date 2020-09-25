@@ -31,9 +31,37 @@ The City's Most Likely to Get You Doored awards probably go to all of North Ave,
 
 Call **Milwaukee's 311 equivalent 414-286-2489** to report idiots' cars parked/stopped in bike lanes, obstructions in bike lanes, etc.
 
-[AMENDED Wisconsin Bike Week: Sat. Sept. 12 - Sat. Sept. 19](https://sites.google.com/wisconsinbikefed.org/bikeweek/home)  
-[AMENDED National Bike to Work Week: Mon. Sept. 21 - Fri. Sept. 25  
-AMENDED National Bike to Work Day: Tues. Sept. 22](https://bikeleague.org/bikemonth)  
 [Know our laws and know your rights](https://reddit.com/r/MiltownBiking/comments/f9gnh9/know_your_laws/)! Ride safely! *Be seen*!
 
 **Sept. 2020 - The Future?** A global pandemic has changed everything. Tons more people have been out on two and three wheels lately. When I wasn't outside, I mapped planned and proposed lanes and trails that have not yet been painted or built yet, from several different master bike plans. These are in two layers, unchecked/invisible by default one for currently unmade Oak Leaf Trail lines and other county trails.. Turn these layers on to compare what could be to what we have. A few seriously glaring omissions, however: Brady Street, *Van Buren*, Oklahoma. A safe north-south option for downtown. A way to go westbound on/near St Paul, with the only lane taken by streetcar tracks. The list goes on. Talk to your alderpeople, y'all. When the time comes, mask up and go to planning meetings. We need to advocate for the Milwaukee we want. We need safer streets, infrastructural investments, and more bodies on bikes!
+
+**Sources**:
+
+
+
+**Sources**:
+
+
+https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/maps
+https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike
+https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/Bike-Facilities
+https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/City-of-Milwaukee-Bicycle-Milwaukee-Plan
+https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/Complete-Streets
+https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/Bike-Facilities/Trails/KK-River-Trail
+https://www.railstotrails.org/trailblog/2015/january/13/wisconsins-kinnickinnic-river-trail/
+https://www.hankaaronstatetrail.org/
+https://county.milwaukee.gov/EN/Parks/Explore/Trails/Oak-Leaf-Trail
+https://wi-westallis.civicplus.com/1262/Bike-Maps
+https://www.co.ozaukee.wi.us/553/Interurban-Trail
+https://www.racinecounty.com/home/showdocument?id=1323
+https://www.traillink.com/trail/city-of-franklin-hike-and-bike-trail/
+
+https://activestreets.mailchimpsites.com/
+
+https://www.powerlinetrail.org/
+https://urbanmilwaukee.com/2020/05/19/transportation-city-seeks-grants-for-new-bike-trails/
+https://urbanmilwaukee.com/2020/02/24/transportation-city-plans-4-pedestrian-bicycling-projects/
+https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/City-of-Milwaukee-Bicycle-Milwaukee-Plan
+https://urbanmilwaukee.com/2020/02/17/transportation-city-to-rebuild-national-avenue/
+https://onmilwaukee.com/articles/national-avenue-reconstruction
+
