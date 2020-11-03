@@ -55,6 +55,7 @@ https://activestreets.mailchimpsites.com/
 
 Planned/proposed infrastructure:
 
+https://city.milwaukee.gov/ImageLibrary/Groups/cityDCD/planning/plans/NearNorth/pdfs/CTC_FinalDraft_9-25-201.pdf
 https://www.railstotrails.org/trailblog/2015/january/13/wisconsins-kinnickinnic-river-trail/
 https://www.powerlinetrail.org/
 https://urbanmilwaukee.com/2020/05/19/transportation-city-seeks-grants-for-new-bike-trails/
