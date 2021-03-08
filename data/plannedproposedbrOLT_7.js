@@ -1,6 +1,6 @@
-var json_plannedproposedbrOakLeafTrail_7 = {
+var json_plannedproposedbrOLTl_7 = {
 "type": "FeatureCollection",
-"name": "plannedproposedbrOakLeafTrail_7",
+"name": "plannedproposedbrOLT_7",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "trail line": "Wilson Creek Line - Central", "notes": "<a href=\"https:\/\/city.milwaukee.gov\/mpw\/infrastructure\/MilwaukeebyBike\/City-of-Milwaukee-Bicycle-Milwaukee-Plan\" target=\"_blank\">2010 Milwaukee by Bike Plan<\/a>" }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -87.947999570471836, 42.979475740283853 ], [ -87.94749722120666, 42.97925492689707 ], [ -87.94707368692842, 42.978962461447928 ], [ -87.946629221242446, 42.978457307856459 ], [ -87.946407246645506, 42.978027583788844 ], [ -87.946343160590459, 42.977625270151279 ], [ -87.946349361423941, 42.97653742212551 ], [ -87.946373123642744, 42.974719341045912 ], [ -87.946351559434859, 42.974277083738031 ], [ -87.946025406391399, 42.97364006975846 ], [ -87.945556393368335, 42.973204214208849 ], [ -87.945052339334879, 42.972943882653034 ], [ -87.944416207071455, 42.972722994342391 ], [ -87.939485380966445, 42.972623076253818 ], [ -87.939095318693319, 42.972488875873111 ] ] ] } },
