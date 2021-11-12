@@ -39,14 +39,12 @@ Call **Milwaukee's 311 equivalent 414-286-2489** to report idiots' cars parked/s
 
 Exising infrastructure:
 
-https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/maps
-https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike
-https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/Bike-Facilities
-https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/City-of-Milwaukee-Bicycle-Milwaukee-Plan
-https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/Complete-Streets
-https://city.milwaukee.gov/mpw/infrastructure/MilwaukeebyBike/Bike-Facilities/Trails/KK-River-Trail
-https://www.hankaaronstatetrail.org/
+https://city.milwaukee.gov/dpw/infrastructure/multimodal/maps
+https://city.milwaukee.gov/dpw/infrastructure/multimodal/Bike-Infrastructure
+https://city.milwaukee.gov/dpw/infrastructure/multimodal/Bike-Infrastructure/Trails/KK-River-Trail
+https://city.milwaukee.gov/dpw/infrastructure/multimodal/Bike-Infrastructure/Trails/Beerline-B-Trail
 https://county.milwaukee.gov/EN/Parks/Explore/Trails/Oak-Leaf-Trail
+https://www.hankaaronstatetrail.org/
 https://wi-westallis.civicplus.com/1262/Bike-Maps
 https://www.co.ozaukee.wi.us/553/Interurban-Trail
 https://www.racinecounty.com/home/showdocument?id=1323
@@ -55,6 +53,7 @@ https://activestreets.mailchimpsites.com/
 
 Planned/proposed infrastructure:
 
+https://city.milwaukee.gov/dpw/infrastructure/multimodal/Plans/2010-Milwaukee-By-Bike-Plan
 https://city.milwaukee.gov/ImageLibrary/Groups/cityDCD/planning/plans/NearNorth/pdfs/CTC_FinalDraft_9-25-201.pdf
 https://www.railstotrails.org/trailblog/2015/january/13/wisconsins-kinnickinnic-river-trail/
 https://www.powerlinetrail.org/
